@@ -17,7 +17,6 @@ body {
 .this-div {
     height:400px;
     text-align:center;
-    padding-top:250px;
     font-size:xx-large
   }
 .backgrounda {
@@ -66,5 +65,28 @@ h1 {
     color:white;
     
 }
-  
+
+/* .box-blue, .box-red {
+    width:300px;
+    height:300px;
+    position: absolute;
+    margin:50px;
+} */
+.box-blue {
+    width:300px;
+    height:300px;
+    position: absolute;
+    margin:50px;
+    background-color:blue;
+    left: 150px;
+}
+
+.box-red {
+    width:300px;
+    height:300px;
+    position: absolute;
+    margin:50px;
+    background-color:red;
+    right: 150px
+}
   
