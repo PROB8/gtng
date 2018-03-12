@@ -4,7 +4,7 @@ const path          = require('path')
 const port          = process.env.PORT
 
 app.use((req,res,next) => {
-    res.sendFile(path.resolve(__dirname, '../client/build','maintainence.html'))
+    res.sendFile(path.resolve(__dirname, '../client/build','maintenance.html'))
 })
 app.use(express.static(path.resolve(__dirname, '../client/build')));
 
