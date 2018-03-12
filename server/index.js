@@ -3,10 +3,18 @@ const app           = express()
 const path          = require('path')
 const port          = process.env.PORT
 
+/*
+    FOR MAINTENANCE:
+   
+
+*/
+
+app.use(express.static(path.resolve(__dirname, '../client/build')));
+
 app.use((req,res,next) => {
     res.sendFile(path.resolve(__dirname, '../client/build','maintenance.html'))
 })
-app.use(express.static(path.resolve(__dirname, '../client/build')));
+
 
 
 app.get('*', (req,res) => {
