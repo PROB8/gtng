@@ -14,7 +14,7 @@
     "install:client": "cd client && npm install"
   },
   "keywords": [
-    "react"
+    "React"
   ],
   "author": "J Naeem Gitonga <blackb8r@gmail.com>",
   "license": "MIT",
