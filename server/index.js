@@ -5,7 +5,7 @@ const path          = require('path')
 
 
 app.get('*', (req,res) => {
-    const index = path.resolve(__dirname, '../client/build', 'index.html');
+    const index = path.join(__dirname, '../client/build', 'index.html');
     res.sendFile(index)
 })
 
