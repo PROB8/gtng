@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import AOS from 'aos'
+import AOS from 'aos';
+import Footer from './footer';
 
 class App extends Component {
     constructor(props, context) { 
@@ -21,7 +22,7 @@ class App extends Component {
                 </div>
             </div>
             <div className='this-div'>
-                PEEP DIS SHIT
+                
             </div>
             <div className="backgroundb">
                 <h1>BACKGROUND 2</h1>
@@ -41,9 +42,7 @@ class App extends Component {
                 <div className='shadow'>
             </div>
             </div>
-            <div className='this-div'>
-           
-            </div>
+            <Footer />
         </div>
         );
     }
