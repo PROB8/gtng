@@ -14,14 +14,16 @@ body {
     z-index: 2
 }
   
-.this-div {
+.this-div, .this-div2 {
     height:400px;
+}
+.this-div2 {
     text-align:center;
-    font-size:xx-large
-  }
+    padding:20px;
+}
 .backgrounda {
     height: 400px;
-    background: url(https://farm3.staticflickr.com/2814/11594633484_fec26e3603_b.jpg) no-repeat center fixed;
+    background: url(https://www.christianaid.org.uk/sites/default/files/styles/banner_strip_full_normal_x1/public/2017-01/nigeria-crisis-appeal-banner-girls-water.jpg?itok=kjO11ou6) no-repeat center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -33,7 +35,7 @@ body {
 }
   .backgroundb {
     height: 400px;
-      background: url(https://farm4.staticflickr.com/3715/11594635564_b21009cae6_b.jpg) no-repeat center fixed;
+      background: url(https://www.msf.org.uk/sites/uk/files/styles/general_proportion/https/media.msf.org/Docs/MSF/Media/TR1/5/6/e/a/MSF209715.jpg?itok=z8J2Wow4) no-repeat center fixed;
       -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -46,7 +48,7 @@ body {
 
 .backgroundc {
     height: 400px;
-    background: url(https://farm6.staticflickr.com/5524/11594323675_034ef063b6_b.jpg) no-repeat center fixed;
+    background: url(http://news.bbcimg.co.uk/media/images/56367000/jpg/_56367240_01_mg_6463.jpg) no-repeat center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -77,8 +79,9 @@ h1 {
     height:300px;
     position: absolute;
     margin:50px;
-    background-color:blue;
-    left: 150px;
+    background-color:#9c99994d;
+    left: 10%;
+    text-align:left
 }
 
 .box-red {
@@ -86,7 +89,57 @@ h1 {
     height:300px;
     position: absolute;
     margin:50px;
-    background-color:red;
-    right: 150px
+    background-color:#9c99994d;
+    right: 10%;
+    text-align:left
 }
-  
+
+.this-div2>h2 {
+    margin-top:0
+}
+
+@media only screen and (max-width: 725px) {
+    .backgrounda,.backgroundb,.backgroundc {
+        background-size:cover;
+        background-attachment:initial;
+        background-position:center center;
+        background-repeat:no-repeat;
+        width:100%;
+        display:inline-block;
+        background-color:initial;
+        max-height:250px
+
+    }
+
+    .shadow {
+        display:none
+    }
+
+    .this-div {
+        /* display:inline-block; */
+        /* min-height:300px */
+        /* position:initial */
+    }
+
+    .aos {
+        display: none;
+    }
+
+
+}
+
+@media only screen and (max-width:950px) {
+   
+    .box-blue , .box-red{
+        
+        position:static;
+        display:inline-block;
+        width: 75%;
+        margin: 10px auto;
+    }
+    
+    .this-div2 {
+        height:unset;
+        padding: 15px
+    }
+}

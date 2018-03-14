@@ -1,0 +1,50 @@
+
+
+.wrap {
+    position:relative;
+    padding:20px;
+    margin:auto;
+}
+
+.btm-line {
+    position:absolute;
+    bottom:0;
+    height:50px;
+    width:100%
+}
+
+.btm-line-text {
+    color:#9c9999f5;
+    font-size:1em;
+}
+
+.logo-container {
+    /* display:inline-block; */
+    max-width: 300px;
+    text-align:unset;
+}
+
+ul {
+    margin: 0 0 1.5em;
+    list-style: none;
+    margin: 0 1em 0.5em 0;
+}
+
+li {
+    display:inline;
+    margin: 0 1em 0.5em 0;
+    height:30px;
+    width:30px;
+}
+a {
+    display: inline-block;
+    height: 30px;
+}
+.pic-wrap {
+    height:30px;
+    display:inline-block;
+}
+.logo {
+    height:100%;
+    width:auto;
+}
