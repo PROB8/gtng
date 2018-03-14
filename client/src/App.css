@@ -19,8 +19,9 @@ body {
 }
 .this-div2 {
     text-align:center;
-    padding:20px;
+    padding:50px 20px 20px 20px;
 }
+
 .backgrounda {
     height: 400px;
     background: url(https://www.christianaid.org.uk/sites/default/files/styles/banner_strip_full_normal_x1/public/2017-01/nigeria-crisis-appeal-banner-girls-water.jpg?itok=kjO11ou6) no-repeat center fixed;
@@ -28,7 +29,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-color: #1c120c;
+   
     background-attachment:fixed;
     position:relative;
     overflow:hidden;
@@ -40,7 +41,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
       background-size: cover;
-      background-color: #1c120c;
+     
       background-attachment:fixed;
       position:relative;
       overflow:hidden;
@@ -53,7 +54,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-color: #1c120c;
+   
     background-attachment:fixed;
     position:relative;
     overflow:hidden;
@@ -75,27 +76,25 @@ h1 {
     margin:50px;
 } */
 .box-blue {
-    width:300px;
+    width:320px;
     height:300px;
     position: absolute;
-    margin:50px;
     background-color:#9c99994d;
-    left: 10%;
+    left:19%;
     text-align:left
 }
 
 .box-red {
-    width:300px;
+    width:320px;
     height:300px;
     position: absolute;
-    margin:50px;
     background-color:#9c99994d;
-    right: 10%;
+    right:19%;
     text-align:left
 }
 
 .this-div2>h2 {
-    margin-top:0
+    margin-top: 0;
 }
 
 @media only screen and (max-width: 725px) {
@@ -115,12 +114,6 @@ h1 {
         display:none
     }
 
-    .this-div {
-        /* display:inline-block; */
-        /* min-height:300px */
-        /* position:initial */
-    }
-
     .aos {
         display: none;
     }
@@ -128,18 +121,31 @@ h1 {
 
 }
 
-@media only screen and (max-width:950px) {
+@media only screen and (max-width:1100px) {
    
     .box-blue , .box-red{
-        
+        min-width: 250px;
         position:static;
         display:inline-block;
         width: 75%;
-        margin: 10px auto;
+        margin: 20px auto;
     }
     
     .this-div2 {
         height:unset;
-        padding: 15px
+        padding: 50px 20px 50px 20px;
+    }
+}
+
+@media only screen and (min-width:1600px) {
+    .box-blue , .box-red{
+        
+        width: 75%;
+        left:30%;
+        width:320px;
+        height:300px;
+        position: absolute;
+        background-color:#9c99994d;
+        text-align:left
     }
 }
