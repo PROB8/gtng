@@ -14,6 +14,25 @@ body {
     z-index: 2
 }
   
+.header {
+    float: left;
+    position: relative;
+    top: 194px;
+    margin-left: 113px;
+    font-weight:1000;
+    letter-spacing:3px
+}
+
+.slogan {
+    float: left;
+    position: relative;
+    top: 214px;
+    margin-left: 113px;
+    font-weight:1000;
+    letter-spacing:3px;
+    color:white
+}
+
 .this-div, .this-div2 {
     min-height:400px;
 }

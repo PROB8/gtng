@@ -8,9 +8,17 @@
     font-size: 17px;
    
 }
+
+.filler {
+    height:58px;
+    width:150px;
+    float:left
+
+}
+
 #navbar {
     z-index:100;
-    background-color:grey;
+    background-color:#808080d1;
     height:58px;
 
 }
@@ -20,7 +28,7 @@
 }
   
 #navbar a.active {
-    background-color: #4CAF50;
+    background-color: rgb(62, 64, 62);
     color: white;
 }
   
@@ -40,5 +48,9 @@
 @media only screen and (max-width: 725px) {
     #navbar {
         margin-top: -4px;
+    }
+
+    .filler {
+        width:20px
     }
 }

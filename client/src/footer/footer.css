@@ -53,8 +53,8 @@ ul {
 li {
     display:inline;
     margin: 0 1em 0.5em 0;
-    height:30px;
-    width:30px;
+    /* height:30px;
+    width:30px; */
 }
 a {
     display: inline-block;
@@ -143,14 +143,15 @@ footer {
     }
 } 
 
-.section-2>.container.b {
-    /* margin-left: 50px; */
-}
+/* .section-2>.container.b {
+    margin-left: 50px;
+} */
 
 @media only screen and (max-width:980px) {
-    .section-2>.container.b {
-        /* margin-left: unset; */
-    }
+    /* .section-2>.container.b {
+        margin-left: unset;
+    } */
+    
     .container {
         margin:10px 50px;
         text-align:left;

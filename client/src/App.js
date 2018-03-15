@@ -10,14 +10,10 @@ class App extends Component {
        
     } 
     componentDidMount() {
-        // if(window.innerWidth > 850) {
             AOS.init({
                 easing: 'ease-in-out-sine',
-                // disable: window.innerWidth < 750
               }); 
-        // }
         window.onresize = function(e) {
-            console.log('working')
             if(window.innerWidth <= 850) {
                 AOS.disable
             }
@@ -35,11 +31,13 @@ class App extends Component {
         }
         return (
         <div className="App">
-            <div className="backgrounda">
-              
+            <header className="backgrounda">
+
                 <div className='shadow'>
+                    <h1 className='header'>GTNG</h1>
+                    <p className='slogan'><em>boundless</em></p>
                 </div>
-            </div>
+            </header>
             <StickyNav />
             <div className='this-div'>
                 <div style={style}
@@ -60,7 +58,7 @@ class App extends Component {
                 <div className='shadow'>
                 </div>
             </div>
-            <div className='this-div2'>
+            <div id='about-us'className='this-div2'>
             <h2>We are the best at innovation</h2>
             <div className='box-blue' data-aos="fade-right">
                 <p>Now it's on and it's on because I said so
