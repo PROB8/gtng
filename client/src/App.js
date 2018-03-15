@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import AOS from 'aos';
 import Footer from './footer/footer';
+import StickyNav from './stickyNav/stickyNav';
 
 class App extends Component {
     constructor(props, context) { 
@@ -39,6 +40,7 @@ class App extends Component {
                 <div className='shadow'>
                 </div>
             </div>
+            <StickyNav />
             <div className='this-div'>
                 <div style={style}
                 ><p>So many battlefield scars while driven in plush cars
