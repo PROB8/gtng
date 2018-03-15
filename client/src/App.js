@@ -94,6 +94,38 @@ No guts, no glory, my nigga, bitch got the game distorted</p></div>
                 <div className='shadow'>
             </div> 
             </div>
+            <div className='this-div'>
+            <p>Then I spit some game in her ear, "Go to the telly, hoe!"
+Equipped with money in a Benz ‘cause, bitch, I'm barely broke
+I'm smokin' bomb-ass weed, feelin' crucial
+From player to player the game's tight, the feeling's mutual
+From hustlin' and prayers to breakin' motherfuckers to pay up
+I got no time for these bitches, ‘cause these hoes try to play us
+I'm on a meal ticket mission, want a mill, so I'm wishin'
+Competition got me ripped on that bullshit they stressin'
+I'ma rhyme though, clown hoes like it's mandatory
+No guts, no glory, my nigga, bitch got the game distorted</p>
+<p>Then I spit some game in her ear, "Go to the telly, hoe!"
+Equipped with money in a Benz ‘cause, bitch, I'm barely broke
+I'm smokin' bomb-ass weed, feelin' crucial
+From player to player the game's tight, the feeling's mutual
+From hustlin' and prayers to breakin' motherfuckers to pay up
+I got no time for these bitches, ‘cause these hoes try to play us
+I'm on a meal ticket mission, want a mill, so I'm wishin'
+Competition got me ripped on that bullshit they stressin'
+I'ma rhyme though, clown hoes like it's mandatory
+No guts, no glory, my nigga, bitch got the game distorted</p>
+<p>Then I spit some game in her ear, "Go to the telly, hoe!"
+Equipped with money in a Benz ‘cause, bitch, I'm barely broke
+I'm smokin' bomb-ass weed, feelin' crucial
+From player to player the game's tight, the feeling's mutual
+From hustlin' and prayers to breakin' motherfuckers to pay up
+I got no time for these bitches, ‘cause these hoes try to play us
+I'm on a meal ticket mission, want a mill, so I'm wishin'
+Competition got me ripped on that bullshit they stressin'
+I'ma rhyme though, clown hoes like it's mandatory
+No guts, no glory, my nigga, bitch got the game distorted</p>
+            </div>
             <Footer />
         </div>
         );

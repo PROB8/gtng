@@ -1,16 +1,23 @@
 
 
 .wrap {
+    text-align:center;
     position:relative;
-    padding:20px;
+    padding:20px 40px 0 20px;
     margin:auto;
+    max-width: 800px;
+    max-height: 400px;
 }
 
 .btm-line {
-    position:absolute;
-    bottom:0;
+    /* position:absolute;
+    bottom:0; */
+    margin:auto;
+    margin-top:10px;
     height:50px;
-    width:100%
+    width:90%;
+    text-align:center;
+    border-top:1.5px solid #cecccc;
 }
 
 .btm-line-text {
@@ -18,16 +25,29 @@
     font-size:1em;
 }
 
-.logo-container {
+.container {
+    text-align: center;
+    /* min-width:300px; */
+    
     /* display:inline-block; */
-    max-width: 300px;
-    text-align:unset;
 }
 
+.a {
+    float:left;
+    clear:left;
+}
+.section-2 {
+    min-height:300px
+}
+.b {
+    float:right;
+    clear:right;
+}
 ul {
     margin: 0 0 1.5em;
     list-style: none;
     margin: 0 1em 0.5em 0;
+    padding:0;
 }
 
 li {
@@ -47,4 +67,104 @@ a {
 .logo {
     height:100%;
     width:auto;
+}
+
+.two {
+    text-align:left;
+}
+
+
+
+h6 {
+    font-weight:1000;
+    text-align:left;
+}
+
+.b>a {
+    text-decoration:none;
+    color:#454141fb;
+}
+
+.section-1>.container.b {
+    margin-right: 189px;
+
+}
+
+.two {
+    width:250px
+}
+
+footer {
+    border-top:1px solid #cecccc52
+}
+
+
+
+@media only screen and (max-width:880px) {
+    .container {
+       margin:10px 25px
+       
+    }
+    
+  
+    .a {
+        margin : 10px 0 10px 120px; 
+    }
+
+    .b {
+        margin: 10px 3px 10px 0;
+        /* margin-left:120px */
+    }
+} 
+
+@media only screen and (max-width:830px) {
+    .container {
+        margin:10px 0 10px 25px
+    }
+
+}
+
+
+@media only screen and (max-width:800px) {
+    .container {
+        /* width:80% */
+        text-align:left;
+        display:block;
+       
+    }
+    
+    .wrap {
+        min-height:unset;
+    }
+
+    .a,.b {
+        float:unset;
+        clear:unset;
+    }
+} 
+
+.section-2>.container.b {
+    /* margin-left: 50px; */
+}
+
+@media only screen and (max-width:980px) {
+    .section-2>.container.b {
+        /* margin-left: unset; */
+    }
+    .container {
+        margin:10px 50px;
+        text-align:left;
+        display:block;
+       
+    }
+    .wrap {
+        min-height:unset;
+        max-height: unset;
+    }
+
+    .a,.b {
+        float:unset;
+        clear:unset;
+    }
+
 }
