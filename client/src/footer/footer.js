@@ -16,14 +16,14 @@ const Footer = () => {
                         <a href='#'><h6>CAREERS</h6></a>
                     </div>
                 </section>
-                <section className='section-2'>
+                <section className='section-2'> 
 
                     <div className='container a'>
                         <h6>SOCIAL US</h6>
 
-                        <ul>
-                            <li><div className='pic-wrap'><a href='https://www.linkedin.com/company/gtng/'><img className='logo' src={ln}/></a></div></li>
-                            <li><div className='pic-wrap'><a href='https://www.instagram.com/gtng_tech/'><img className='logo' src={ig}/></a></div></li>
+                        <ul className='social-1'>
+                            <li className='social ' ><div className='pic-wrap'><a href='https://www.linkedin.com/company/gtng/'><img className='logo' src={ln}/></a></div></li>
+                            <li className='social '><div className='pic-wrap'><a href='https://www.instagram.com/gtng_tech/'><img className='logo' src={ig}/></a></div></li>
                         </ul>
                     </div>
                     <div className='container b'>

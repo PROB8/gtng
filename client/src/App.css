@@ -2,7 +2,7 @@ body {
     margin:0 auto;
 }
   
-.shadow {
+.shadow , .shadow-1{
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
     bottom: 0;
     content: "";
@@ -13,33 +13,106 @@ body {
     right: 0;
     z-index: 2
 }
-  
-.header {
+
+.header-wrap {
     float: left;
     position: relative;
-    top: 194px;
+    top: 260px;
+    left: 37px;
     margin-left: 113px;
+}
+
+.header {
+    
+    font-size:2.5em;
+    margin:0;
     font-weight:1000;
-    letter-spacing:3px
+    letter-spacing:9px
+}
+
+.header:hover {
+    cursor:pointer;
+    color:#ffffff8f;
+    transition:.3s;
 }
 
 .slogan {
-    float: left;
-    position: relative;
-    top: 214px;
-    margin-left: 113px;
+    margin:0;
     font-weight:1000;
     letter-spacing:3px;
-    color:white
+    color: #fff;
+    opacity: 0.8;
 }
 
-.this-div, .this-div2 {
+
+
+@media only screen and (max-width: 725px) {
+    .header-wrap {
+        margin:0;
+        top: 310px;
+        left:22px
+    }
+
+    .header {
+        font-size:1.5rem
+    }
+
+    .slogan {
+        font-size:.75rem
+    }
+}
+
+.this-div, .this-div2, .this-div3 {
     min-height:400px;
 }
 .this-div2 {
     text-align:center;
     padding:50px 20px 20px 20px;
 }
+
+.this-div3 {
+    overflow:hidden;
+    padding:25px 55px
+}
+
+.subject {
+    float:left;
+    width:36%;
+    text-align:center;
+}
+
+.content,.content-1 {
+    float:right;
+    width:56%
+}
+
+
+.content-1 {
+    margin-top:25px
+}
+@media only screen and (max-width:650px) {
+    .this-div3 * {
+        display:block;
+        float:unset;
+        text-align:left
+    }
+
+   
+    .subject {
+        width:100%
+    }
+    
+    .content {
+        margin-top:75px;
+        width:100%
+    }
+
+    .content-1{
+        margin-top:108px;
+        width:100%
+    }
+}
+
 
 .backgrounda {
     height: 400px;
@@ -90,18 +163,14 @@ h1 {
 
 .box-blue {
     width:320px;
-    height:300px;
     position: absolute;
-    background-color:#9c99994d;
     left:19%;
     text-align:left
 }
 
 .box-red {
     width:320px;
-    height:300px;
     position: absolute;
-    background-color:#9c99994d;
     right:19%;
     text-align:left
 }
@@ -111,7 +180,7 @@ h1 {
 }
 
 @media only screen and (max-width: 725px) {
-    .backgrounda,.backgroundb,.backgroundc {
+    .backgroundb,.backgroundc {
         background-size:cover;
         background-attachment:initial;
         background-position:center center;
@@ -161,4 +230,9 @@ h1 {
         background-color:#9c99994d;
         text-align:left
     }
+}
+
+
+.first {
+    min-height: 275px;
 }

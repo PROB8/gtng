@@ -3,5 +3,6 @@ body {
     font-family: 'Libre Franklin', sans-serif;
     color:#454141fb;
     font-weight: lighter;
-    letter-spacing:.75px
+    letter-spacing:.5px;
+    line-height: 1.66;
 }

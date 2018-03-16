@@ -5,8 +5,8 @@ export default class StickyNav extends Component {
 
     componentDidMount() {
         document.addEventListener('click', function(e) {
-
-            if (!e.path[0].hash) return
+            console.log(e.path)
+            if (!e.path[0].className === 'link') return
 
             let links = document.getElementsByClassName('active')
             console.log(e.path)
@@ -39,15 +39,15 @@ export default class StickyNav extends Component {
         return (
             <div id='navbar'>
                 <div className='filler'></div>
-                <a className='link active' href='' onClick={(e) => {
+                <a className='link active' href='/' onClick={(e) => {
                    e.preventDefault()
-                   window.scrollTo(0,0)
+                   window.scrollTo(0,0) //RETHINK BECAUSE Y CHANGES ON SMALLER SCREENS
                 }}>Home</a>
-                <a className='link' href='' onClick={(e) => {
+                <a className='link' href='/' onClick={(e) => {
                    e.preventDefault()
                    window.scrollTo(0,890)
                 }}>About Us</a>
-                <a className='link' href='' onClick={(e)=> {
+                <a className='link cnt' href='/' onClick={(e)=> {
                     e.preventDefault()
                     window.scrollTo(0,2405)
                 }}>Contact</a>

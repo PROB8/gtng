@@ -6,12 +6,10 @@
     padding:20px 40px 0 20px;
     margin:auto;
     max-width: 800px;
-    max-height: 400px;
+    overflow:hidden
 }
 
 .btm-line {
-    /* position:absolute;
-    bottom:0; */
     margin:auto;
     margin-top:10px;
     height:50px;
@@ -25,13 +23,6 @@
     font-size:1em;
 }
 
-.container {
-    text-align: center;
-    /* min-width:300px; */
-    
-    /* display:inline-block; */
-}
-
 .a {
     float:left;
     clear:left;
@@ -39,31 +30,35 @@
 .section-2 {
     min-height:300px
 }
+
 .b {
     float:right;
     clear:right;
 }
-ul {
+
+ul.social-1 {
     margin: 0 0 1.5em;
     list-style: none;
     margin: 0 1em 0.5em 0;
     padding:0;
 }
 
-li {
+li.social {
     display:inline;
     margin: 0 1em 0.5em 0;
-    /* height:30px;
-    width:30px; */
+  
 }
+
 a {
     display: inline-block;
     height: 30px;
 }
+
 .pic-wrap {
     height:30px;
     display:inline-block;
 }
+
 .logo {
     height:100%;
     width:auto;
@@ -72,8 +67,6 @@ a {
 .two {
     text-align:left;
 }
-
-
 
 h6 {
     font-weight:1000;
@@ -98,39 +91,16 @@ footer {
     border-top:1px solid #cecccc52
 }
 
-
-
-@media only screen and (max-width:880px) {
-    .container {
-       margin:10px 25px
-       
-    }
-    
-  
-    .a {
-        margin : 10px 0 10px 120px; 
-    }
-
-    .b {
-        margin: 10px 3px 10px 0;
-        /* margin-left:120px */
-    }
-} 
-
 @media only screen and (max-width:830px) {
     .container {
         margin:10px 0 10px 25px
     }
-
 }
-
 
 @media only screen and (max-width:800px) {
     .container {
-        /* width:80% */
         text-align:left;
         display:block;
-       
     }
     
     .wrap {
@@ -143,21 +113,15 @@ footer {
     }
 } 
 
-/* .section-2>.container.b {
-    margin-left: 50px;
-} */
-
 @media only screen and (max-width:980px) {
-    /* .section-2>.container.b {
-        margin-left: unset;
-    } */
-    
+   
     .container {
         margin:10px 50px;
         text-align:left;
         display:block;
        
     }
+
     .wrap {
         min-height:unset;
         max-height: unset;
@@ -167,5 +131,4 @@ footer {
         float:unset;
         clear:unset;
     }
-
 }
