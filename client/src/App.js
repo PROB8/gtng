@@ -34,16 +34,15 @@ class App extends Component {
                <SlideShow/>
                 <div className='content-1'>
                     <h6></h6>
-                    <p>Then I spit some game in her ear, "Go to the telly, hoe!"
-                    Equipped with money in a Benz ‘cause, bitch, I'm barely broke
-                    I'm smokin' bomb-ass weed, feelin' crucial
-                    From player to player the game's tight, the feeling's mutual
-                    From hustlin' and prayers to breakin' motherfuckers to pay up
-                    I got no time for these bitches, ‘cause these hoes try to play us
-                    I'm on a meal ticket mission, want a mill, so I'm wishin'
-                    Competition got me ripped on that bullshit they stressin'
-                    I'ma rhyme though, clown hoes like it's mandatory
-                    No guts, no glory, my nigga, bitch got the game distorted</p>
+                    <p>"Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo 
+                        consequat. Duis aute irure dolor in reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat
+                        nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt </p>
                 </div>
 
             </div>
@@ -55,25 +54,30 @@ class App extends Component {
             <div id='about-us'className='this-div2 about-us'>
             <h2>We're the best at innovation</h2>
             <div className='box-blue' data-aos="fade-right">
-                <p>Now it's on and it's on because I said so
-                    Can't trust a bitch in the business, so I got with Death Row
-                    Now these money-hungry bitches gettin' suspicious
-                    Started plottin' and plannin' on schemes to come and trick us
-                    But thug niggas be on point and game tight
-                    Me, Syke and Bogart strapped up the same night
-                    Got problems, then handle it, motherfuckers see me
-                    Thes</p>
+                <p>N"Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo 
+                        consequat. Duis aute irure dolor in reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat
+                        nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt 
+                </p>
                
              
             </div>
             
            <div className='box-red' data-aos="fade-left">
-            <p>Then I spit some game in her ear, "Go to the telly, hoe!"
-                Equipped with money in a Benz ‘cause, bitch, I'm barely broke
-                I'm smokin' bomb-ass weed, feelin' crucial
-                From player to player the game's tight, the feeling's mutual
-                From hustlin' and prayers to breakin' motherfuckers to pay up
-                I got no time for these bitc</p>
+            <p>"Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo 
+                consequat. Duis aute irure dolor in reprehenderit
+                in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat
+                non proident, sunt in culpa qui officia deserunt </p>
             </div>
             
             </div>
@@ -88,36 +92,27 @@ class App extends Component {
                 </div>
                 <div className='content'>
                     <h6></h6>
-                    <p>Then I spit some game in her ear, "Go to the telly, hoe!"
-                    Equipped with money in a Benz ‘cause, bitch, I'm barely broke
-                    I'm smokin' bomb-ass weed, feelin' crucial
-                    From player to player the game's tight, the feeling's mutual
-                    From hustlin' and prayers to breakin' motherfuckers to pay up
-                    I got no time for these bitches, ‘cause these hoes try to play us
-                    I'm on a meal ticket mission, want a mill, so I'm wishin'
-                    Competition got me ripped on that bullshit they stressin'
-                    I'ma rhyme though, clown hoes like it's mandatory
-                    No guts, no glory, my nigga, bitch got the game distorted</p>
-                    <p>Then I spit some game in her ear, "Go to the telly, hoe!"
-                    Equipped with money in a Benz ‘cause, bitch, I'm barely broke
-                    I'm smokin' bomb-ass weed, feelin' crucial
-                    From player to player the game's tight, the feeling's mutual
-                    From hustlin' and prayers to breakin' motherfuckers to pay up
-                    I got no time for these bitches, ‘cause these hoes try to play us
-                    I'm on a meal ticket mission, want a mill, so I'm wishin'
-                    Competition got me ripped on that bullshit they stressin'
-                    I'ma rhyme though, clown hoes like it's mandatory
-                    No guts, no glory, my nigga, bitch got the game distorted</p>
-                    <p>Then I spit some game in her ear, "Go to the telly, hoe!"
-                    Equipped with money in a Benz ‘cause, bitch, I'm barely broke
-                    I'm smokin' bomb-ass weed, feelin' crucial
-                    From player to player the game's tight, the feeling's mutual
-                    From hustlin' and prayers to breakin' motherfuckers to pay up
-                    I got no time for these bitches, ‘cause these hoes try to play us
-                    I'm on a meal ticket mission, want a mill, so I'm wishin'
-                    Competition got me ripped on that bullshit they stressin'
-                    I'ma rhyme though, clown hoes like it's mandatory
-                    No guts, no glory, my nigga, bitch got the game distorted</p>
+                    <p>"Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo 
+                        consequat. Duis aute irure dolor in reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat
+                        nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt 
+                    </p>
+                    <p>"Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo 
+                        consequat. Duis aute irure dolor in reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat
+                        nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt 
+                    </p>
+                   
                 </div>
             </div>
             <Footer />

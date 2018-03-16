@@ -11,7 +11,8 @@ export default class GTNGPartner extends Component {
                 
                 <h1  className='close'onClick={this.props.modalDisplay} > x </h1>
                 <iframe 
-                    
+                    allowfullscreen='true'
+                    allowtransparency='true'
                     src="https://form.jotform.com/80746079884169">
                 </iframe>
             </div>
