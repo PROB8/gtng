@@ -23,7 +23,7 @@ app.get('*', (req,res) => {
     console.log(index)
     res.sendFile(index)
 })
-
+  
 
 let server
 const runServer = (port=3001) => {
