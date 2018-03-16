@@ -2,32 +2,41 @@ import React, {Component} from 'react';
 import './sn.css';
 
 export default class StickyNav extends Component {
+    /* 
+    
+        THE FUNCTION BELOW:
+            helps us to add css class to the 
+            appropriatel clicked nav link
 
-    componentDidMount() {
-        document.addEventListener('click', function(e) {
-            console.log(e.path)
-            if (!e.path[0].className === 'link') return
+    */
+
+    justCss = () => {
+        document.addEventListener('click', function(e) { 
+            let className = e.path[0].className.split(' ')
+            // console.log(e)
+            if (!className.includes('link')) return
 
             let links = document.getElementsByClassName('active')
-            console.log(e.path)
+            // console.log(e.path)
             for (let link of links) {
-                
                 link.classList.remove('active')
                 e.path[0].classList.add('active')
             }
-
-            
-
-          
+      
         })
+    }
 
-        window.onscroll = function() {myFunction()};
+
+    componentDidMount() {
+
+        this.justCss()
+
+        window.onscroll = function() {stickyIcky()};
 
         let navbar = document.getElementById('navbar');
         let sticky = navbar.offsetTop;
 
-        function myFunction() {
-            // console.log(window.pageYOffset, sticky)
+        function stickyIcky() {
         if (window.pageYOffset >= sticky) {
             navbar.classList.add('sticky')
         } else {
@@ -35,21 +44,28 @@ export default class StickyNav extends Component {
         }
         }
     }
-    render() {
+
+    goScroll = elmt => {
+        let pos = document.getElementsByClassName(elmt)[0].offsetTop
+        console.log(pos)
+        window.scrollTo(0,pos-75)
+    }
+
+    render() { 
         return (
             <div id='navbar'>
                 <div className='filler'></div>
                 <a className='link active' href='/' onClick={(e) => {
                    e.preventDefault()
-                   window.scrollTo(0,0) //RETHINK BECAUSE Y CHANGES ON SMALLER SCREENS
+                   this.goScroll('first') //RETHINK BECAUSE Y CHANGES ON SMALLER SCREENS
                 }}>Home</a>
                 <a className='link' href='/' onClick={(e) => {
                    e.preventDefault()
-                   window.scrollTo(0,890)
+                   this.goScroll('about-us')
                 }}>About Us</a>
                 <a className='link cnt' href='/' onClick={(e)=> {
                     e.preventDefault()
-                    window.scrollTo(0,2405)
+                    this.goScroll('contact')
                 }}>Contact</a>
             </div>
 

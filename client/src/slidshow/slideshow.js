@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import pix1 from '../pix/welcome.png';
 import pix2 from '../pix/salaam.png';
 import pix3 from '../pix/bienvenidos.png';

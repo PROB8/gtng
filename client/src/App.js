@@ -3,7 +3,8 @@ import './App.css';
 import AOS from 'aos';
 import Footer from './footer/footer';
 import StickyNav from './stickyNav/stickyNav';
-import SlideShow from './slidshow/slideshow'
+import SlideShow from './slidshow/slideshow';
+import GTNGPartner from './gtngPartner';
 
 class App extends Component {
   
@@ -51,7 +52,7 @@ class App extends Component {
                 <div className='shadow'>
                 </div>
             </div>
-            <div id='about-us'className='this-div2'>
+            <div id='about-us'className='this-div2 about-us'>
             <h2>We're the best at innovation</h2>
             <div className='box-blue' data-aos="fade-right">
                 <p>Now it's on and it's on because I said so
