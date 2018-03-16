@@ -3,7 +3,7 @@
 .wrap {
     text-align:center;
     position:relative;
-    padding:20px 40px 0 20px;
+    padding:20px 20px 0 20px;
     margin:auto;
     max-width: 800px;
     overflow:hidden
@@ -91,16 +91,17 @@ footer {
     border-top:1px solid #cecccc52
 }
 
-@media only screen and (max-width:830px) {
-    .container {
-        margin:10px 0 10px 25px
+@media only screen and (max-width:920px) {
+    .a{
+        margin:10px 0 10px 45px
     }
 }
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:780px) {
     .container {
         text-align:left;
         display:block;
+        margin:10px 0 10px 65px
     }
     
     .wrap {
@@ -113,7 +114,7 @@ footer {
     }
 } 
 
-@media only screen and (max-width:980px) {
+/* @media only screen and (max-width:980px) {
    
     .container {
         margin:10px 50px;
@@ -131,4 +132,4 @@ footer {
         float:unset;
         clear:unset;
     }
-}
+} */

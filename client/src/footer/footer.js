@@ -30,7 +30,7 @@ const Footer = () => {
                     <h6>CONTACT US</h6>
                         <div className='two'>
                             <p>info@gtng.tech</p>
-                            <p>384 Northyard Blvd, Atlanta, GA 30313</p>
+                            <p>384 Northyard Blvd NW, Atlanta, GA 30313</p>
                             <p>404-670-0059</p>
                            
                         </div>
