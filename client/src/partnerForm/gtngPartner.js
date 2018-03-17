@@ -11,7 +11,7 @@ export default class GTNGPartner extends Component {
             <div id='modal' style={{display:this.props.display}}>
                 
                 <div className='wrapper'>
-                   <h1  className='close'onClick={this.props.modalDisplay} > x </h1>
+                   <h1  className='close'onClick={this.props.modalDisplay} > close </h1>
                     <iframe
                         height="315" 
                         width="560" 
