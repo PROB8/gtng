@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import ln from './ln.png';
 import ig from './ig.png';
 import './footer.css';
-import GTNGPartner from '../gtngPartner';
+import GTNGPartner from '../partnerForm/gtngPartner';
 
 export default class Footer extends Component {
     state = {
@@ -17,14 +17,14 @@ export default class Footer extends Component {
             this.setState({display:'none'})
         }
 
-        // let overflow = document.getElementsByTagName('body')[0].style.overflow
-        // if(this.state.display === 'block') {
-        //     overflow = 'hidden'
-        // }
+        let overflow = document.getElementsByTagName('body')[0].style.overflow
+        if(this.state.display === 'block') {
+            overflow = 'hidden'
+        }
 
-        // if(overflow === 'hidden') {
-        //     overflow = 'auto'
-        // }
+        if(overflow === 'hidden') {
+            overflow = 'auto'
+        }
     }
 
     render () {
@@ -39,7 +39,7 @@ export default class Footer extends Component {
                         <div className='container b'>
                             <a onClick={()=>{
                                 this.modalDisplay()
-                            }}><h6>CAREERS</h6></a>
+                            }}><h6 className='careers'>CAREERS</h6></a>
                         </div>
                     </section>
                     <section className='section-2'> 

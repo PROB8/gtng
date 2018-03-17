@@ -4,7 +4,7 @@ import AOS from 'aos';
 import Footer from './footer/footer';
 import StickyNav from './stickyNav/stickyNav';
 import SlideShow from './slidshow/slideshow';
-import GTNGPartner from './gtngPartner';
+
 
 class App extends Component {
   

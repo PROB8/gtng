@@ -18,6 +18,10 @@
     border-top:1.5px solid #cecccc;
 }
 
+.careers:hover {
+    cursor:pointer;
+}
+
 .btm-line-text {
     color:#9c9999f5;
     font-size:1em;
