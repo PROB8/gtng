@@ -24,7 +24,7 @@ iframe {
     padding-bottom: 56.25%;
     padding-top: 35px;
     height: 500px;
-    /* overflow: auto; */
+    overflow: auto;
     width:85%;
     margin:auto;
 }
@@ -36,7 +36,8 @@ iframe {
     float:right;
     top:-22px;
     right:10%;
-    margin:0
+    margin:0;
+    z-index:31;
 }
 
 .close:hover {
