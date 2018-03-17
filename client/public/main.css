@@ -19,3 +19,8 @@ body {
     max-width: 1000px;
     margin: 0 auto;
 }
+
+.contain {
+    height: 100vh;
+    width: 100vw;
+}
