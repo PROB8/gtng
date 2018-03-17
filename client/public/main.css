@@ -1,7 +1,7 @@
-html, body {
+/* html, body {
     height: 100vh;
     width:auto;
-}
+} */
 
 
 
@@ -15,12 +15,3 @@ body {
     line-height: 1.66;
 }
 
-#root {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.contain {
-    height: 100vh;
-    width: 100vw;
-}
