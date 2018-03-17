@@ -117,23 +117,3 @@ footer {
         clear:unset;
     }
 } 
-
-/* @media only screen and (max-width:980px) {
-   
-    .container {
-        margin:10px 50px;
-        text-align:left;
-        display:block;
-       
-    }
-
-    .wrap {
-        min-height:unset;
-        max-height: unset;
-    }
-
-    .a,.b {
-        float:unset;
-        clear:unset;
-    }
-} */
