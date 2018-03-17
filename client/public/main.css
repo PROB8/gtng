@@ -1,3 +1,11 @@
+html, body {
+    height: 100vh;
+    width:auto;
+}
+
+
+
+
 body {
     overflow-x:hidden;
     font-family: 'Libre Franklin', sans-serif;
