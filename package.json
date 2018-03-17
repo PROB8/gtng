@@ -19,9 +19,10 @@
   "author": "J Naeem Gitonga <blackb8r@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "cross-env": "^3.1.4",
+    "dotenv": "^5.0.1",
     "express": "^4.16.3",
     "http-proxy-middleware": "^0.17.4",
-    "cross-env": "^3.1.4",
     "npm-run-all": "^4.0.1",
     "xp": "^1.0.1"
   }

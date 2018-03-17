@@ -3,10 +3,15 @@ import ln from './ln.png';
 import ig from './ig.png';
 import './footer.css';
 import GTNGPartner from '../partnerForm/gtngPartner';
+import request from 'superagent';
 
 export default class Footer extends Component {
     state = {
         display:'none'
+    }
+
+    call = () => {
+       request.get('/form').then(res => console.log(res))
     }
 
     modalDisplay = () => {
@@ -17,7 +22,7 @@ export default class Footer extends Component {
             this.setState({display:'none'})
         }
 
-        let overflow = document.getElementsByTagName('body')[0].style.overflow
+        let overflow = document.getElementById('body').style.overflow
         if(this.state.display === 'block') {
             overflow = 'hidden'
         }
@@ -38,7 +43,7 @@ export default class Footer extends Component {
                         </div>
                         <div className='container b'>
                             <a onClick={()=>{
-                                this.modalDisplay()
+                               this.modalDisplay()
                             }}><h6 className='careers'>CAREERS</h6></a>
                         </div>
                     </section>

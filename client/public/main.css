@@ -1,5 +1,5 @@
 html, body {
-    height: 100vh;
+    /* height: 100vh; */
     width:auto;
 }
 
@@ -9,7 +9,7 @@ html, body {
 body {
     overflow-x:hidden;
     font-family: 'Libre Franklin', sans-serif;
-    color:#454141fb;
+    color:#363333;
     font-weight: lighter;
     letter-spacing:.5px;
     line-height: 1.66;

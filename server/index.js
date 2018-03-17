@@ -1,7 +1,7 @@
 const express       = require('express');
 const app           = express()
 const path          = require('path')
-const port          = process.env.PORT
+const {PORT}        = require('./config')
 
 /*
     FOR MAINTENANCE:
@@ -11,19 +11,16 @@ const port          = process.env.PORT
         res.sendFile(path.resolve(__dirname, '../client/build','maintenance.html'))
     }) 
     
-    */
+*/ 
 
 app.use(express.static(path.resolve(__dirname, '../client/build')));
 
-
-
-
-app.get('*', (req,res) => {
+ 
+app.get(/^(?!\/api(\/|$))/, (req,res) => {
     const index = path.resolve(__dirname, '../client/build', 'index.html');
-    console.log(index)
-    res.sendFile(index)
-})
-  
+    res.sendFile(index)  
+})  
+   
 
 let server
 const runServer = (port=3001) => {
@@ -35,10 +32,10 @@ const runServer = (port=3001) => {
 }
 
 
-const closeServer = () => {
+const closeServer = () => { 
     server.close()
 }
-
+ 
 if (require.main === module) {
     runServer();
   }
