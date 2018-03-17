@@ -15,7 +15,7 @@ export default class GTNGPartner extends Component {
                     id='iframe' 
                     allowFullScreen='true'
                     allowTransparency='true'
-                    marginheight='80px'
+                    marginheight='100px'
                     marginwidth='80px'
                     src="https://form.jotform.com/80746079884169">
                 </iframe>
