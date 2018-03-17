@@ -17,14 +17,14 @@ export default class Footer extends Component {
             this.setState({display:'none'})
         }
 
-        let overflow = document.getElementsByTagName('body')[0].style.overflow
-        if(this.state.display === 'block') {
-            overflow = 'hidden'
-        }
+        // let overflow = document.getElementsByTagName('body')[0].style.overflow
+        // if(this.state.display === 'block') {
+        //     overflow = 'hidden'
+        // }
 
-        if(overflow === 'hidden') {
-            overflow = 'auto'
-        }
+        // if(overflow === 'hidden') {
+        //     overflow = 'auto'
+        // }
     }
 
     render () {
