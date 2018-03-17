@@ -38,11 +38,26 @@ iframe {
     position:relative;
     float:right;
     top:2px;
-    right:10%;
+    right:2%;
     margin:0;
     z-index:31;
 }
 
 .close:hover {
     cursor:pointer
+}
+
+
+@media only screen and (min-width:630px) and ( max-height:360px)  {
+    .wrapper {
+        padding-top: 140px;
+    }
+
+    .close {
+        right: 7%;
+    }
+    iframe {
+        height:61%;
+        width: 87%;
+    }
 }
