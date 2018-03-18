@@ -27,7 +27,7 @@ export default class ReturnArrow extends Component {
             console.log('working')
             if ( n > 0 ) {
                 setTimeout(function(){
-                    let newLocation = n - 7
+                    let newLocation = n - 10
                     console.log('look', newLocation)
                     window.scrollTo(0, newLocation) 
                     run(newLocation)

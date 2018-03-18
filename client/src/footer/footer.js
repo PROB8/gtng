@@ -69,7 +69,7 @@ export default class Footer extends Component {
                     </section>
                 </div>
                 <div className='btm-line'>
-                    <p className='btm-line-text'>&copy; 2018 GTNG </p>
+                    <p className='btm-line-text'>Copyright &copy; 2018 GTNG </p>
                 </div>
                 <GTNGPartner display={this.state.display} modalDisplay={this.modalDisplay} />
             </footer>
