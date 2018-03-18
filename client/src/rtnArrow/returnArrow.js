@@ -24,11 +24,9 @@ export default class ReturnArrow extends Component {
     scrolling = (yOff) => {
 
         function scroll(n){
-            console.log('working')
-            if ( n > 0 ) {
+            if ( n > 5 ) {
                 setTimeout(function(){
-                    let newLocation = n - 10
-                    console.log('look', newLocation)
+                    let newLocation = n / 1.05
                     window.scrollTo(0, newLocation) 
                     scroll(newLocation)
                 }, 0 )
