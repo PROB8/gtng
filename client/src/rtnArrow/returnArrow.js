@@ -21,22 +21,22 @@ export default class ReturnArrow extends Component {
         })
     }
 
-    movePage = (yOff) => {
+    scrolling = (yOff) => {
 
-        function run(n){
+        function scroll(n){
             console.log('working')
             if ( n > 0 ) {
                 setTimeout(function(){
                     let newLocation = n - 10
                     console.log('look', newLocation)
                     window.scrollTo(0, newLocation) 
-                    run(newLocation)
-                }, -100 )
+                    scroll(newLocation)
+                }, 0 )
             
             }
         }
         
-        run(yOff)
+        scroll(yOff)
         
     }
 
@@ -47,7 +47,7 @@ export default class ReturnArrow extends Component {
                 <a className='up-arrow-link'  
                 onClick={()=>{
                     let loc = window.pageYOffset;
-                    this.movePage(loc)
+                    this.scrolling(loc)
                 }}>
                     <i className="fas fa-angle-up fa-2x"></i>
                 </a>
