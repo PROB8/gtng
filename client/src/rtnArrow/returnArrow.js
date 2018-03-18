@@ -49,7 +49,7 @@ export default class ReturnArrow extends Component {
                     let loc = window.pageYOffset;
                     this.movePage(loc)
                 }}>
-                    <i className="fas fa-angle-up"></i>
+                    <i className="fas fa-angle-up fa-2x"></i>
                 </a>
             </div>
         )

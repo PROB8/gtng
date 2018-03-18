@@ -3,8 +3,8 @@
     z-index: 40;
     right:20px;
     bottom:50px;
-    width:25px;
-    height:25px;
+    width:35px;
+    height:35px;
     border-radius:50%;
     border: 2px solid #363333;
     text-align:center;
@@ -23,6 +23,8 @@
 }
 
 div>.up-arrow-link {
+    position:relative;
+    top:1px;
     text-decoration:none;
     vertical-align:middle;
 }
