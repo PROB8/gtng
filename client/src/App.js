@@ -4,6 +4,7 @@ import AOS from 'aos';
 import Footer from './footer/footer';
 import StickyNav from './stickyNav/stickyNav';
 import SlideShow from './slidshow/slideshow';
+import ReturnArrow from './rtnArrow/returnArrow';
 
 
 class App extends Component {
@@ -18,6 +19,7 @@ class App extends Component {
         
         return (
         <div className="App">
+            <ReturnArrow />
             <header className="backgrounda">
 
                 <div className='shadow-1'>

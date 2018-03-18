@@ -2,9 +2,7 @@ import React, {Component} from 'react';
 import './gp.css';
 
 export default class GTNGPartner extends Component {
-    componentDidMount() {
-    }
-
+   
     render() {
         
         return (
