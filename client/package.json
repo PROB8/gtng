@@ -4,10 +4,10 @@
   "private": true,
   "dependencies": {
     "aos": "^2.2.0",
-    "express": "^4.16.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.1",
+    "react-touch-carousel": "^0.8.2",
     "superagent": "^3.8.2"
   },
   "scripts": {
