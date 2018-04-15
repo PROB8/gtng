@@ -26,7 +26,7 @@ export default class ReturnArrow extends Component {
         function scroll(n){
             if ( n > 5 ) {
                 setTimeout(function(){
-                    let newLocation = n / 1.05
+                    let newLocation = n / 1.03
                     window.scrollTo(0, newLocation) 
                     scroll(newLocation)
                 }, 0 )

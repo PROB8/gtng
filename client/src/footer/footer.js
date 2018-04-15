@@ -7,7 +7,8 @@ import request from 'superagent';
 
 export default class Footer extends Component {
     state = {
-        display:'none'
+        display:'none',
+        iframe:''
     }
 
     call = () => {
@@ -33,6 +34,18 @@ export default class Footer extends Component {
     }
 
     render () {
+        let iframe = (
+            <iframe
+                height="315" 
+                width="560" 
+                scrolling='yes'
+                allowfullscreen="" 
+                frameborder="0"   
+                src='https://www.jahanaeemgitonga.com' >
+                 {/* src="https://form.jotform.com/80746079884169" */}
+            </iframe>
+        )
+
         return (
             <footer className='footer contact'>
                 <div className='wrap'>
@@ -43,14 +56,16 @@ export default class Footer extends Component {
                         </div>
                         <div className='container b'>
                             <a onClick={()=>{
-                               this.modalDisplay()
+                                this.setState({iframe:iframe})
+                                this.modalDisplay()
+
                             }}><h6 className='careers'>CAREERS</h6></a>
                         </div>
                     </section>
                     <section className='section-2'> 
     
                         <div className='container a'>
-                            <h6>SOCIAL US</h6>
+                            <h6>SOCIAL WE</h6>
     
                             <ul className='social-1'>
                                 <li className='social ' ><div className='pic-wrap'><a href='https://www.linkedin.com/company/gtng/'><img className='logo' src={ln}/></a></div></li>
@@ -71,7 +86,10 @@ export default class Footer extends Component {
                 <div className='btm-line'>
                     <p className='btm-line-text'>Copyright &copy; 2018 GTNG </p>
                 </div>
-                <GTNGPartner display={this.state.display} modalDisplay={this.modalDisplay} />
+                <GTNGPartner display={this.state.display} 
+                    modalDisplay={this.modalDisplay} 
+                    iframe={this.state.iframe}
+                />
             </footer>
         )
     }

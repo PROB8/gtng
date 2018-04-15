@@ -74,6 +74,7 @@ a {
 
 h6 {
     font-weight:1000;
+    font-size:15px;
     text-align:left;
 }
 
@@ -83,7 +84,7 @@ h6 {
 }
 
 .section-1>.container.b {
-    margin-right: 189px;
+    margin-right: 175px;
 
 }
 

@@ -8,7 +8,21 @@ import ReturnArrow from './rtnArrow/returnArrow';
 
 
 class App extends Component {
-  
+    
+    componentWillMount() {
+        window.addEventListener('click', function(e) {
+            let arrow = document.getElementById('arrow')
+            if (e.path[0].className === 'careers') {
+                
+                arrow.style.display = 'none'
+            }
+            else if (e.path[0].className === 'close') {
+                arrow.style.display = 'initial'
+            }
+        })
+    
+    }
+
     componentDidMount() {
         AOS.init({
             easing: 'ease-in-out-sine',

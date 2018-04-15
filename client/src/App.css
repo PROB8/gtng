@@ -228,12 +228,18 @@ h1 {
     .box-blue , .box-red{
         
         width: 75%;
-        left:30%;
         width:320px;
         height:300px;
         position: absolute;
         background-color:#9c99994d;
         text-align:left
+    }
+
+    .box-blue {
+        left:900px;
+    }
+    .box-red {
+        right:900px;
     }
 }
 
