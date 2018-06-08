@@ -76,8 +76,9 @@ class App extends Component {
 
                     <div className="box-red" data-aos="fade-left">
                         <p>
-                            Below is a list of some the technologies we use, or
-                            have used while building products for our clients:
+                            Below is a list of some of the technologies we use,
+                            or have used while building products for our
+                            clients:
                         </p>
                         <ProjectStack />
                     </div>
