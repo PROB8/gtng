@@ -45,7 +45,7 @@ class App extends Component {
                     <SlideShow />
                     <div className="content-1">
                         <p>
-                            Welcome! Here at GTNG we pride oursevles on being
+                            Welcome! Here at GTNG we pride ourselves on being
                             customer oriented and delivering on our promises.
                             While we build your app, you can expect to be well
                             informed and taken care of throughout the entire
@@ -94,17 +94,14 @@ class App extends Component {
                             These are some of the recent apps we have
                             engineered:
                         </p>
-                        <p>
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore
-                            eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia
-                            deserunt
-                        </p>
+                        <ul>
+                            <li>
+                                <a href="http://connex.com">Connex App</a>
+                            </li>
+                            <li>
+                                <a href="https://traxion.io">Traxion</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <Footer />
