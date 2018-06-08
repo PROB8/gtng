@@ -6,32 +6,28 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-   
 }
 
 .filler {
-    height:58px;
-    width:150px;
-    float:left
-
+    height: 58px;
+    width: 150px;
+    float: left;
 }
 
 #navbar {
-    z-index:22;
-    background-color:#808080d1;
-    height:58px;
-
+    z-index: 22;
+    background-color: #935757d1;
+    height: 58px;
 }
 #navbar a:hover {
     background-color: #ddd;
     color: black;
 }
-  
+
 #navbar a.active {
     background-color: rgb(62, 64, 62);
     color: white;
 }
-  
 
 .sticky {
     position: fixed;
@@ -39,11 +35,10 @@
     width: 100%;
     z-index: 100;
 }
-  
+
 .sticky + .content {
     padding-top: 60px;
 }
-
 
 @media only screen and (max-width: 725px) {
     #navbar {
@@ -51,12 +46,12 @@
     }
 
     .filler {
-        width:20px
+        width: 20px;
     }
 }
 
-@media only screen and (max-width:360px) {
+@media only screen and (max-width: 360px) {
     .cnt {
-        display:none !important;
+        display: none !important;
     }
 }

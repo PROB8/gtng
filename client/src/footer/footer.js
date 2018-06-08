@@ -4,6 +4,7 @@ import ig from './ig.png';
 import './footer.css';
 import GTNGPartner from '../partnerForm/gtngPartner';
 import request from 'superagent';
+import moment from 'moment';
 
 export default class Footer extends Component {
     state = {
@@ -106,7 +107,9 @@ export default class Footer extends Component {
                     </section>
                 </div>
                 <div className="btm-line">
-                    <p className="btm-line-text">Copyright &copy; 2018 GTNG </p>
+                    <p className="btm-line-text">
+                        © {moment().format('YYYY')} GTNG™
+                    </p>
                 </div>
                 <GTNGPartner
                     display={this.state.display}
