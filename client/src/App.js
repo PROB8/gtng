@@ -96,7 +96,9 @@ class App extends Component {
                         </p>
                         <ul>
                             <li>
-                                <a href="http://connex.com">Connex App</a>
+                                <a href="http://www.connexapp.com">
+                                    Connex App
+                                </a>
                             </li>
                             <li>
                                 <a href="https://traxion.io">Traxion</a>

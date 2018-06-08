@@ -42,7 +42,7 @@ export default class Footer extends Component {
                 scrolling="yes"
                 allowFullScreen=""
                 frameBorder="0"
-                src="https://www.jahanaeemgitonga.com"
+                src="https://form.jotform.com/80746079884169"
             >
                 {/* src="https://form.jotform.com/80746079884169" */}
             </iframe>
@@ -69,7 +69,7 @@ export default class Footer extends Component {
                     </section>
                     <section className="section-2">
                         <div className="container a">
-                            <h6>SOCIAL WE</h6>
+                            <h6>SOCIAL MEDIA</h6>
 
                             <ul className="social-1">
                                 <li className="social ">
@@ -99,7 +99,9 @@ export default class Footer extends Component {
                         <div className="container b">
                             <h6>CONTACT US</h6>
                             <div className="two">
-                                <p>info@gtng.tech</p>
+                                <a href="mailto:info@gtng.tech">
+                                    <p>info@gtng.tech</p>
+                                </a>
                                 <p>384 Northyard Blvd NW, Atlanta, GA 30313</p>
                                 <p>404-670-0059</p>
                             </div>
