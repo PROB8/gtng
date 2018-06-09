@@ -92,8 +92,8 @@ class App extends Component {
                     </div>
                     <div className="content">
                         <p>
-                            These are some of the recent apps we have
-                            engineered:
+                            These are some of the recent apps and websites we
+                            have engineered:
                         </p>
                         <ul>
                             <li>
@@ -103,6 +103,11 @@ class App extends Component {
                             </li>
                             <li>
                                 <a href="https://traxion.io">Traxion</a>
+                            </li>
+                            <li>
+                                <a href="https://gabriellezalina.herokuapp.com">
+                                    Gabrielle Zalina
+                                </a>
                             </li>
                         </ul>
                     </div>
