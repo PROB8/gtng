@@ -33,7 +33,7 @@ const ProjectStack = () => {
             </li>
             <li>
                 <a
-                    href="https://www.docker.com/"
+                    href="https://www.github.com/"
                     rel="noopener noreferrer"
                     target="_blank"
                 >
@@ -69,7 +69,7 @@ const ProjectStack = () => {
             </li>
             <li>
                 <a
-                    href="https://redux.js.org/"
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3"
                     rel="noopener noreferrer"
                     target="_blank"
                 >
@@ -123,7 +123,7 @@ const ProjectStack = () => {
             </li>
             <li>
                 <a
-                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3"
+                    href="https://redux.js.org/introduction"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
