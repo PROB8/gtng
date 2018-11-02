@@ -102,7 +102,7 @@ class App extends Component {
                                 </a>
                             </li>
                             <li>
-                                <a href="https://traxion.io">Traxion</a>
+                                <a href="https://www.ninety.io">Ninety.io </a>
                             </li>
                             <li>
                                 <a href="https://gabriellezalina.herokuapp.com">
