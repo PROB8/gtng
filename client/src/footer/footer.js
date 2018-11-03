@@ -54,7 +54,7 @@ export default class Footer extends Component {
                     <section className="section-1">
                         <div className="container a">
                             <h6>MISSION </h6>
-                            <p>Mobile and Web apps, better than today's!</p>
+                            <p>Build mobile and web apps, better than today's!</p>
                         </div>
                         <div className="container b">
                             <a
