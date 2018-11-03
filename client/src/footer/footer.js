@@ -102,7 +102,7 @@ export default class Footer extends Component {
                                 <a href="mailto:info@gtng.tech">
                                     <p>info@gtng.tech</p>
                                 </a>
-                                <p>384 Northyard Blvd NW, Atlanta, GA 30313</p>
+                                <p>165 Courtland St, Suite A-224, Atlanta, GA 30303</p>
                                 <p>404-670-0059</p>
                             </div>
                         </div>

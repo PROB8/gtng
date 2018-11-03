@@ -23,3 +23,23 @@ export const showHideArrow = () => {
         }
     });
 };
+
+/* 
+    
+        THE FUNCTION BELOW:
+            helps us to add css class to the 
+            appropriatel clicked nav link
+
+    */
+export const justCss = () => {
+    document.addEventListener('click', function(e) {
+        let className = e.path[0].className.split(' ');
+        if (!className.includes('link')) return;
+
+        let links = document.getElementsByClassName('active');
+        for (let link of links) {
+            link.classList.remove('active');
+            e.path[0].classList.add('active');
+        }
+    });
+};

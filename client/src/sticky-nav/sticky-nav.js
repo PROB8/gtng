@@ -1,37 +1,19 @@
 import React, { Component } from 'react';
+import { listeners } from '../helpers';
 import './sn.css';
 
 export default class StickyNav extends Component {
-    /* 
     
-        THE FUNCTION BELOW:
-            helps us to add css class to the 
-            appropriatel clicked nav link
-
-    */
-
-    justCss = () => {
-        document.addEventListener('click', function(e) {
-            let className = e.path[0].className.split(' ');
-            if (!className.includes('link')) return;
-
-            let links = document.getElementsByClassName('active');
-            for (let link of links) {
-                link.classList.remove('active');
-                e.path[0].classList.add('active');
-            }
-        });
-    };
 
     componentDidMount() {
-        this.justCss();
+        listeners.justCss();
 
         window.onscroll = function() {
             stickyIcky();
         };
 
-        let navbar = document.getElementById('navbar');
-        let sticky = navbar.offsetTop;
+        const navbar = document.getElementById('navbar');
+        const sticky = navbar.offsetTop;
 
         function stickyIcky() {
             if (window.pageYOffset >= sticky) {
@@ -71,6 +53,16 @@ export default class StickyNav extends Component {
                     }}
                 >
                     About Us
+                </a>
+                <a
+                    className="link cnt"
+                    href="/"
+                    onClick={e => {
+                        e.preventDefault();
+                        this.goScroll('services');
+                    }}
+                >
+                    Services
                 </a>
                 <a
                     className="link cnt"
