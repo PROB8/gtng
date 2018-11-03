@@ -1,55 +1,28 @@
 import React, {Component} from 'react';
 import './returnArrow.css';
+import { listeners, tools } from '../helpers';
 
 export default class ReturnArrow extends Component {
 
     componentDidMount() {
-        let windowScroll = window.pageYOffset
-        let arrowDisplay = document.getElementById('arrow')
+        const windowScroll = window.pageYOffset
+        const arrowElement = document.getElementById('arrow')
 
-        if (windowScroll < 500) {
-            arrowDisplay.style.display = 'none'
-        }
-
-        window.addEventListener('scroll',function() {
-            if(window.pageYOffset > 500) {
-                arrowDisplay.style.display = 'initial'
-            }
-            else {
-                arrowDisplay.style.display = 'none'
-            }
-        })
-    }
-
-    scrolling = (yOff) => {
-
-        function scroll(n){
-            if ( n > 5 ) {
-                setTimeout(function(){
-                    let newLocation = n / 1.03
-                    window.scrollTo(0, newLocation) 
-                    scroll(newLocation)
-                }, 0 )
-            
-            }
-        }
-        
-        scroll(yOff)
-        
+        listeners.showArrow(arrowElement, windowScroll)
     }
 
     render() {
 
         return (
-            <div id='arrow' className='arrow-box'>
-                <a className='up-arrow-link'  
-                onClick={()=>{
-                    let loc = window.pageYOffset;
-                    this.scrolling(loc)
-                }}>
+            <a className='up-arrow-link'  
+                onClick={() => {
+                    const yOffset = window.pageYOffset;
+                    tools.scrollTop(yOffset);
+            }}>
+                <div id='arrow' className='arrow-box'>
                     <i className="fas fa-angle-up fa-2x"></i>
-                </a>
-            </div>
+                </div>
+            </a>
         )
     }
 }

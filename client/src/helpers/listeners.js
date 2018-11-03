@@ -43,3 +43,18 @@ export const justCss = () => {
         }
     });
 };
+
+export const showArrow = (arrowElement, windowScroll) => {
+    if (windowScroll < 500) {
+        arrowElement.style.display = 'none'
+    }
+
+    window.addEventListener('scroll',function() {
+        if(window.pageYOffset > 500) {
+            arrowElement.style.display = 'initial'
+        }
+        else {
+            arrowElement.style.display = 'none'
+        }
+    })
+};
