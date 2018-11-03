@@ -11,12 +11,6 @@
         "class": "link",
         "href": "/"
     },
-    // {
-    //     "name": "Services",
-    //     "location": "services",
-    //     "class": "link",
-    //     "href": "/"
-    // },
     {
         "name": "Contact",
         "location": "contact",
