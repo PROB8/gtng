@@ -103,7 +103,7 @@ export default class Footer extends Component {
                                     <p>info@gtng.tech</p>
                                 </a>
                                 <p>165 Courtland St, Suite A-224, Atlanta, GA 30303</p>
-                                <p>404-670-0059</p>
+                                <p><a href="tel:404-670-0059">404-670-0059</a></p>
                             </div>
                         </div>
                     </section>
