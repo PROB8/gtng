@@ -54,7 +54,7 @@ export default class StickyNav extends Component {
                 >
                     About Us
                 </a>
-                <a
+                {/* <a
                     className="link cnt"
                     href="/"
                     onClick={e => {
@@ -63,7 +63,7 @@ export default class StickyNav extends Component {
                     }}
                 >
                     Services
-                </a>
+                </a> */}
                 <a
                     className="link cnt"
                     href="/"
