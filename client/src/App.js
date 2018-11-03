@@ -1,28 +1,19 @@
 import React, { Component } from 'react';
 import './App.css';
 import AOS from 'aos';
+import { listeners } from './helpers';
 import Footer from './footer/footer';
 import SectionOne from './sections/section-one';
 import ReturnArrow from './rtnArrow/returnArrow';
 import ProjectStack from './project-stack';
 
 class App extends Component {
-    componentWillMount() {
-        window.addEventListener('click', function(e) {
-            let arrow = document.getElementById('arrow');
-            //this will hide your arrow if you are viewing the application form modal
-            if (e.path[0].className === 'careers') {
-                arrow.style.display = 'none';
-            } else if (e.path[0].className === 'close') {
-                arrow.style.display = 'initial';
-            }
-        });
-    }
-
     componentDidMount() {
         AOS.init({
             easing: 'ease-in-out-sine'
         });
+        listeners.centerSlideShow();
+        listeners.showHideArrow();
     }
 
     render() {
