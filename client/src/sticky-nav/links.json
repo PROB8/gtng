@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Home",
+        "location": "first",
+        "class": "link active",
+        "href": "/"
+    },
+    {
+        "name": "About Us",
+        "location": "about-us",
+        "class": "link",
+        "href": "/"
+    },
+    // {
+    //     "name": "Services",
+    //     "location": "services",
+    //     "class": "link",
+    //     "href": "/"
+    // },
+    {
+        "name": "Contact",
+        "location": "contact",
+        "class": "link cnt",
+        "href": "/"
+    }
+]
