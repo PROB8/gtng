@@ -11,20 +11,19 @@ export default class StickyNav extends Component {
             
         const navbar = document.getElementById('navbar');
         const sticky = navbar.offsetTop;
-        
+        console.log(sticky)
         window.onscroll = function() {
             tools.stickyNav(navbar, sticky);
         };
     }
 
-    
-
     render() {
         return (
             <div id="navbar">
                 <div className="filler" />
-                {links.map(link => (
-                    <a 
+                {links.map((link, i) => (
+                    <a
+                        key={i}
                         href={link.href}
                         className={link.class}
                         onClick={e => {
