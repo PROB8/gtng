@@ -1,11 +1,17 @@
 import React from 'react';
+import './sections.css';
 
 const SectionOne = () => (
     <div className="this-div3 first">
-        {/* <SlideShow /> */}
+    <div className="purpose">
+
+        <h1>We can build your app!</h1>
+        <p>Let's turn your idea into an app...</p>
+    </div>
         <div className="content-1">
             <p>
-                We are about building the future. Here at GTNG we pride
+                We are about building the future through custom software 
+                solutions. Here at GTNG we pride
                 ourselves on being customer oriented and delivering on our
                 promises. While we build your app, you can expect to be well
                 informed and taken care of throughout the entire process. We

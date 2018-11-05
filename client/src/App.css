@@ -79,10 +79,7 @@ body {
     padding: 50px 20px 20px 20px;
 }
 
-.this-div3 {
-    overflow: hidden;
-    padding: 25px 55px;
-}
+
 
 .subject {
     float: left;
@@ -90,8 +87,7 @@ body {
     text-align: center;
 }
 
-.content,
-.content-1 {
+.content {
     float: right;
     width: 56%;
 }
@@ -99,12 +95,8 @@ body {
 .content-1 {
     margin-top: 25px;
 }
-@media only screen and (max-width: 650px) {
-    .this-div3 * {
-        display: block;
-        float: unset;
-        text-align: left;
-    }
+@media only screen and (max-width: 695px) {
+    
 
     .subject {
         width: 100%;
@@ -116,7 +108,7 @@ body {
     }
 
     .content-1 {
-        margin-top: 108px;
+        margin-top: 40px;
         width: 100%;
     }
 }
