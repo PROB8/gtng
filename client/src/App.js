@@ -3,7 +3,7 @@ import './App.css';
 import AOS from 'aos';
 import { listeners } from './helpers';
 import Footer from './footer/footer';
-import SectionOne from './sections/section-one';
+import Head from './sections/head';
 import ReturnArrow from './rtnArrow/returnArrow';
 import ProjectStack from './project-stack';
 
@@ -20,7 +20,7 @@ class App extends Component {
         return (
             <div className="App">
                 <ReturnArrow />
-                <SectionOne />
+                <Head />
                 <div className="backgroundb">
                     <div className="shadow" />
                 </div>
