@@ -2,7 +2,7 @@ import React from 'react';
 import './sections.css';
 
 const SectionOne = () => (
-    <div className="this-div3 first">
+    <div id="first" className="container first">
     <div className="purpose">
 
         <h1>We can build your app!</h1>
