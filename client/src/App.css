@@ -69,12 +69,12 @@ body {
     }
 }
 
-.this-div,
-.this-div2,
-.this-div3 {
+.container,
+.container-two {
     min-height: 400px;
 }
-.this-div2 {
+
+.container-two {
     text-align: center;
     padding: 50px 20px 20px 20px;
 }
@@ -307,7 +307,7 @@ h1 {
     text-align: left;
 }
 
-.this-div2 > h2 {
+.container-two > h2 {
     margin-top: 0;
 }
 
@@ -348,7 +348,7 @@ a {
         margin: 20px auto;
     }
 
-    .this-div2 {
+    .container-two {
         height: unset;
         padding: 50px 20px 50px 20px;
     }

@@ -7,7 +7,7 @@ export const stickyNav = (navbar, sticky) => {
     }
 };
 
-export const goScroll = elmt => {
+export const scrollTo = elmt => {
     const pos = document.getElementsByClassName(elmt)[0].offsetTop;
     window.scrollTo(0, pos - 75);
 };

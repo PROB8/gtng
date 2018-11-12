@@ -5,13 +5,11 @@ import links from './links.json';
 
 export default class StickyNav extends Component {
     
-
     componentDidMount() {
-        listeners.justCss();
-            
+        listeners.activateTabOnClick();
+        listeners.activateTabOnScroll(links);
         const navbar = document.getElementById('navbar');
         const sticky = navbar.offsetTop;
-        console.log(sticky)
         window.onscroll = function() {
             tools.stickyNav(navbar, sticky);
         };
@@ -23,12 +21,13 @@ export default class StickyNav extends Component {
                 <div className="filler" />
                 {links.map((link, i) => (
                     <a
+                        id={link['link-id']}
                         key={i}
                         href={link.href}
                         className={link.class}
                         onClick={e => {
                             e.preventDefault();
-                            tools.goScroll(link.location)
+                            tools.scrollTo(link['container-id'])
                         }}
                     >
                         {link.name}
