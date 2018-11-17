@@ -70,9 +70,7 @@ export const activateTabOnScroll = links => {
             if(correspondingLink.classList.contains('active') && elementsBottom <= navBarBottom) {
                 correspondingLink.classList.remove('active');
             }
-            if(!correspondingLink.classList.contains('active') && elementsTop - navBarBottom < 150 && elementsTop - navBarBottom > 50) {
-                
-                console.log(activeLinks)
+            if(!correspondingLink.classList.contains('active') && elementsTop - navBarBottom < 150 && elementsTop - navBarBottom > -80) {
                 for(let activeLink of activeLinks) {
                     activeLink.classList.remove('active')
                 }
