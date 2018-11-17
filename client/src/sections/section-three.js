@@ -1,8 +1,8 @@
 import React from 'react';
 import projects from './data/projects.json';
 
-const SectionThree = () => (
-    <div className="this-div3">
+const AppsSection = () => (
+    <div id="apps" className="container apps">
         <div className="subject">
             <h5>APPS</h5>
         </div>
