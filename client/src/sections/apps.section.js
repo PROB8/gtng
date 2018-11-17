@@ -2,7 +2,7 @@ import React from 'react';
 import projects from './data/projects.json';
 
 const AppsSection = () => (
-    <div id="apps" className="container">
+    <div id="apps" className="container apps">
         <div className="subject">
             <h5>APPS</h5>
         </div>
