@@ -44,7 +44,7 @@
 }
 
 .scroll::-webkit-scrollbar {
-    display: none;
+    /* display: none; */
 }
 
 .sticky + .content {
@@ -58,11 +58,5 @@
 
     .filler {
         width: 20px;
-    }
-}
-
-@media only screen and (max-width: 360px) {
-    .cnt {
-        display: none !important;
     }
 }
