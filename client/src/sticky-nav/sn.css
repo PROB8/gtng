@@ -1,6 +1,5 @@
 #navbar a {
-    float: left;
-    display: block;
+    /* float: left; */
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
@@ -12,6 +11,7 @@
     height: 58px;
     width: 150px;
     float: left;
+    white-space: nowrap;
 }
 
 #navbar {
@@ -34,6 +34,17 @@
     top: 0;
     width: 100%;
     z-index: 100;
+}
+
+.scroll {
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.scroll::-webkit-scrollbar {
+    display: none;
 }
 
 .sticky + .content {

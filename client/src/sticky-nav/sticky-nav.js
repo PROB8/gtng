@@ -17,24 +17,23 @@ export default class StickyNav extends Component {
 
     render() {
         return (
-            <div id="navbar">
-                <div className="filler" />
-                {links.map((link, i) => (
-                    <a
-                        id={link['link-id']}
-                        key={i}
-                        href={link.href}
-                        className={link.class}
-                        onClick={e => {
-                            e.preventDefault();
-                            tools.scrollTo(link['container-id'])
-                        }}
-                    >
-                        {link.name}
-                    </a>
-                ))}
-                
-            </div>
+            <nav id='navbar' className='scroll'>
+                <span className='filler' />
+                    {links.map((link, i) => (
+                        <a
+                            id={link['link-id']}
+                            key={i}
+                            href={link.href}
+                            className={link.class}
+                            onClick={e => {
+                                e.preventDefault();
+                                tools.scrollTo(link['container-id'])
+                            }}
+                        >
+                            {link.name}
+                        </a>
+                    ))}
+            </nav>
         );
     }
 }
