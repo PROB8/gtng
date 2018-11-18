@@ -41,6 +41,7 @@ export const activateTabOnClick = () => {
             link.classList.remove('active');
             e.path[0].classList.add('active');
         }
+        
     });
 };
 

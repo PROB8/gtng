@@ -9,12 +9,13 @@ export const stickyNav = (navbar, sticky) => {
 
 export const scrollTo = elmt => {
     const pos = document.getElementsByClassName(elmt)[0].offsetTop;
-    window.scrollTo(0, pos - 75);
+    console.log(pos)
+    window.scrollTo(0, pos );
 };
 
 export const scrollTop = yOff => {
-
     function scroll(n){
+        console.log('hit')
         if ( n > 5 ) {
             setTimeout(function(){
                 const newLocation = n / 1.03;
