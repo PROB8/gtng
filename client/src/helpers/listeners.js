@@ -30,6 +30,7 @@ export const showHideArrow = () => {
             helps us to add css class to the 
             appropriatel clicked nav link
 
+        **IT HAS ALSO BEEN DEPRECATED 
     */
 export const activateTabOnClick = () => {
     document.addEventListener('click', function(e) {
@@ -37,11 +38,10 @@ export const activateTabOnClick = () => {
         if (!className.includes('link')) return;
 
         const links = document.getElementsByClassName('active');
-        for (let link of links) {
-            link.classList.remove('active');
-            e.path[0].classList.add('active');
+        for (let l of links) {
+            l.classList.remove('active');
         }
-        
+        e.path[0].classList.add('active');
     });
 };
 
@@ -62,27 +62,33 @@ export const showArrow = (arrowElement, windowScroll) => {
 
 export const activateTabOnScroll = links => {
     window.addEventListener('scroll', function(){
-        const activeLinks = document.getElementsByClassName('active');
         const navBarBottom = document.getElementById('navbar').getBoundingClientRect().bottom;
+        const docHeight = document.body.clientHeight;
+
         links.forEach(link => {
             const correspondingLink = document.getElementById(link['link-id'])
             const elementsBottom = document.getElementById(link['container-id']).getBoundingClientRect().bottom;
             const elementsTop = document.getElementById(link['container-id']).getBoundingClientRect().top;
+            
             if(correspondingLink.classList.contains('active') && elementsBottom <= navBarBottom) {
                 correspondingLink.classList.remove('active');
-            }
-            if(!correspondingLink.classList.contains('active') && elementsTop - navBarBottom < 150 && elementsTop - navBarBottom > -80) {
-                for(let activeLink of activeLinks) {
-                    activeLink.classList.remove('active')
-                }
-                correspondingLink.classList.add('active')
+                
             }
 
-            if(!document.getElementById('navbar').classList.contains('sticky')) {
-                for(let activeLink of activeLinks) {
-                    activeLink.classList.remove('active')
-                }
-                document.getElementById('first-link').classList.add('active')
+            if(elementsTop >= 20 && elementsTop < 200) {
+                correspondingLink.classList.add('active')
+            }
+            
+            if(elementsTop  >= docHeight) {
+                correspondingLink.classList.remove('active');
+            }
+            
+            if( docHeight - elementsTop <= 120) {
+                correspondingLink.classList.remove('active');
+            }
+           
+            if(elementsBottom < 220) {
+                correspondingLink.classList.remove('active');
             }
         });
     });

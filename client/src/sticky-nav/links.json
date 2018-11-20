@@ -3,35 +3,26 @@
         "name": "Home",
         "container-id": "first",
         "link-id": "first-link",
-        "class": "link active",
-        "href": "/",
-        "min-position": 420,
-        "max-position": -400
-    },
-    {
+        "class": "link",
+        "href": "/"
+    },{
         "name": "About Us",
         "container-id": "about-us",
         "link-id": "about-us-link",
         "class": "link",
-        "href": "/",
-        "min-position": -473,
-        "max-position": 193
+        "href": "/"
     },{
         "name": "Our Work",
         "container-id": "apps",
         "link-id": "apps-link",
         "class": "link",
-        "href": "/apps",
-        "min-position":700,
-        "max-position": 260
+        "href": "/apps"
     },
     {
         "name": "Contact",
         "container-id": "footer",
         "link-id": "contact-link",
         "class": "link cnt",
-        "href": "/",
-        "min-position":700,
-        "max-position": 260
+        "href": "/"
     }
 ]
