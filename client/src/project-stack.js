@@ -159,7 +159,7 @@ const ProjectStack = () => {
             </li>
             <li>
                 <a
-                    href="http://www.chaijs.com/"
+                    href="https://www.chaijs.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
