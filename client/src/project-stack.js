@@ -1,7 +1,6 @@
 import React from 'react';
 
 const ProjectStack = () => {
-    //  FIND OUT HOW TO OPEN NEW TAB WITHOUT SHIFTING FOCUS FROM YOUR PAGE
     return (
         <ul className="project-stack">
             <li>
