@@ -83,7 +83,7 @@ h6 {
     color:#454141fb;
 }
 
-.section-1>.container.b {
+.section-1>.footer-container.b {
     margin-right: 175px;
 
 }
@@ -103,7 +103,7 @@ footer {
 }
 
 @media only screen and (max-width:780px) {
-    .container {
+    .footer-container {
         text-align:left;
         display:block;
         margin:10px 0 10px 35px

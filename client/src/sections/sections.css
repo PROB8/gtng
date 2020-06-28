@@ -23,7 +23,7 @@
     width: 50%;
 }
 
-.this-div3 {
+.container {
     overflow: hidden;
     padding: 25px 55px 25px 35px;
 }
@@ -32,7 +32,7 @@
     .purpose {
         margin-top: 35px;
     }
-    .this-div3 * {
+    .container * {
         display: block;
         float: unset;
         text-align: left;
@@ -40,7 +40,7 @@
         
     }
     
-    .this-div3 {
+    .container {
         padding-left: 55px !important;
     }
 
