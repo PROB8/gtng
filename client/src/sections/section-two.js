@@ -2,7 +2,7 @@ import React from 'react';
 import ProjectStack from '../project-stack';
 
 const SectionTwo = () => (
-    <div id="about-us" className="this-div2 about-us">
+    <div id="about-us" className="container-two about-us">
         <h2>We're the best at innovation</h2>
         {/* THESE TWO BOXES ON EXTRA WIDE SCREENS NEED TO BE BROUGHT IN CLOSER */}
         <div className="box-blue" data-aos="fade-right">
