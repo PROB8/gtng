@@ -1,10 +1,5 @@
 [
     {
-        "name": "Connex App",
-        "link": "http://www.connexapp.com",
-        "thumbnail":""
-    },
-    {
         "name": "Ninety.io",
         "link": "https://ninety.io",
         "thumbnail":""
@@ -12,6 +7,21 @@
     {
         "name": "Gabrielle Zalina",
         "link": "https://gabriellezalina.herokuapp.com",
+        "thumbnail":""
+    },
+    {
+        "name": "Herbraid Queen",
+        "link": "https://herbraidqueen.com/",
+        "thumbnail":""
+    },
+    {
+        "name": "Connex App",
+        "link": "http://www.connexapp.com",
+        "thumbnail":""
+    },
+    {
+        "name": "GTNG Foundation",
+        "link": "https://gtngfoundation.org",
         "thumbnail":""
     }
 ]
