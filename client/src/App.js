@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import AOS from 'aos';
 import { listeners } from './helpers';
-import Footer from './footer/footer';
+import Footer from './Footer/Footer';
 import { 
     Head,
     SectionTwo,
