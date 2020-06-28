@@ -30,17 +30,18 @@ export const showHideArrow = () => {
             helps us to add css class to the 
             appropriatel clicked nav link
 
+        **IT HAS ALSO BEEN DEPRECATED 
     */
-export const justCss = () => {
+export const activateTabOnClick = () => {
     document.addEventListener('click', function(e) {
-        let className = e.path[0].className.split(' ');
+        const className = e.path[0].className.split(' ');
         if (!className.includes('link')) return;
 
-        let links = document.getElementsByClassName('active');
-        for (let link of links) {
-            link.classList.remove('active');
-            e.path[0].classList.add('active');
+        const links = document.getElementsByClassName('active');
+        for (let l of links) {
+            l.classList.remove('active');
         }
+        e.path[0].classList.add('active');
     });
 };
 
@@ -56,5 +57,39 @@ export const showArrow = (arrowElement, windowScroll) => {
         else {
             arrowElement.style.display = 'none'
         }
-    })
+    });
 };
+
+export const activateTabOnScroll = links => {
+    window.addEventListener('scroll', function(){
+        const navBarBottom = document.getElementById('navbar').getBoundingClientRect().bottom;
+        const docHeight = document.body.clientHeight;
+
+        links.forEach(link => {
+            const correspondingLink = document.getElementById(link['link-id'])
+            const elementsBottom = document.getElementById(link['container-id']).getBoundingClientRect().bottom;
+            const elementsTop = document.getElementById(link['container-id']).getBoundingClientRect().top;
+            
+            if(correspondingLink.classList.contains('active') && elementsBottom <= navBarBottom) {
+                correspondingLink.classList.remove('active');
+                
+            }
+
+            if(elementsTop >= 20 && elementsTop < 200) {
+                correspondingLink.classList.add('active')
+            }
+            
+            if(elementsTop  >= docHeight) {
+                correspondingLink.classList.remove('active');
+            }
+            
+            if( docHeight - elementsTop <= 120) {
+                correspondingLink.classList.remove('active');
+            }
+           
+            if(elementsBottom < 220) {
+                correspondingLink.classList.remove('active');
+            }
+        });
+    });
+}

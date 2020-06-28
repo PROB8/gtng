@@ -34,7 +34,7 @@ export default class Footer extends Component {
     };
 
     render() {
-        let iframe = (
+        const iframe = (
             <iframe
                 title="application form"
                 height="315"
@@ -49,14 +49,14 @@ export default class Footer extends Component {
         );
 
         return (
-            <footer className="footer contact">
+            <footer id="footer" className="footer contact">
                 <div className="wrap">
                     <section className="section-1">
-                        <div className="container a">
+                        <div className="footer-container a">
                             <h6>MISSION </h6>
                             <p>Build mobile and web apps, better than today's!</p>
                         </div>
-                        <div className="container b">
+                        <div className="footer-container b">
                             <a
                                 onClick={() => {
                                     this.setState({ iframe: iframe });
@@ -68,7 +68,7 @@ export default class Footer extends Component {
                         </div>
                     </section>
                     <section className="section-2">
-                        <div className="container a">
+                        <div className="footer-container a">
                             <h6>SOCIAL MEDIA</h6>
 
                             <ul className="social-1">
@@ -96,7 +96,7 @@ export default class Footer extends Component {
                                 </li>
                             </ul>
                         </div>
-                        <div className="container b">
+                        <div className="footer-container b">
                             <h6>CONTACT US</h6>
                             <div className="two">
                                 <a href="mailto:info@gtng.tech">
