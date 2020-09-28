@@ -1,4 +1,4 @@
-export const pylLink = 'https://images-na.ssl-images-amazon.com/images/I/51ZmryqQrlL._SX310_BO1,204,203,200_.jpg';
+export const pylLink = 'https://user-images.githubusercontent.com/26694930/94492594-975d0c80-01b8-11eb-9633-4cd45b7fddea.jpg';
 
 export const imgAlt = 'PYL front cover';
 
