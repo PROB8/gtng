@@ -4,11 +4,12 @@ export const imgAlt = 'PYL front cover';
 
 export const payButtonImgAlt = 'PayPal - The safer, easier way to pay online!';
 
-export const pylCopyHeader = 'Purchase "Program Your Life" here!';
+export const pylCopyHeader = 'Buy "Program Your Life" (paperback book) here!';
 
 export const pylCopyDesc = `
     Memoir written by GTNG's Founder
     detailing how he transitioned from 
     transportation company owner/operator
-    to software engineer.
+    to software engineer (paperback).
+
 `;
