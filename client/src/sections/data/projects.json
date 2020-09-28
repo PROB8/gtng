@@ -1,5 +1,10 @@
 [
     {
+        "name": "Cricket Wireless",
+        "link": "https://www.cricketwireless.com",
+        "thumbnail":""
+    },
+    {
         "name": "Ninety.io",
         "link": "https://ninety.io",
         "thumbnail":""
@@ -12,11 +17,6 @@
     {
         "name": "Herbraid Queen",
         "link": "https://herbraidqueen.com/",
-        "thumbnail":""
-    },
-    {
-        "name": "Connex App",
-        "link": "http://www.connexapp.com",
         "thumbnail":""
     },
     {

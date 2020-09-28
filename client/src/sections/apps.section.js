@@ -8,8 +8,7 @@ const AppsSection = () => (
         </div>
         <div className="content">
             <p>
-                These are some of the recent apps and websites we
-                have engineered:
+                Satisfied Customers:
             </p>
             <ul>
                 { projects.map((project, i) => (
