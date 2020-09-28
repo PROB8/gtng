@@ -1,9 +1,10 @@
 import React from 'react';
 import SectionOne from './section-one';
 import StickyNav from '../sticky-nav/sticky-nav';
+import SellBookSection from './SellBookSection/SellBookSection';
 import './head.css';
 
-const Head = props => (
+const Head = _props => (
     <section className="head">
         <header className="backgrounda">
             <div className="shadow-1">
@@ -16,7 +17,9 @@ const Head = props => (
             </div>
         </header>
         <StickyNav />
+
         <SectionOne />
+        <SellBookSection />
     </section>
 );
 

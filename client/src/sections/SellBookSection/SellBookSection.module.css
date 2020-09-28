@@ -1,0 +1,123 @@
+.container {
+    overflow: hidden;
+    padding: 25px 55px 65px 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.header {
+    font-size: 20px;
+    color: #363333;
+    margin: initial;
+    font-weight: revert;
+}
+
+.bookCover {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-left: 20px;
+}
+
+.buttonForm {
+    width: 250px;
+}
+
+.contentButtonWrapper {
+    display: block;
+    margin-right: 20px;
+}
+
+.pylCopyDesc {
+    max-width: 300px;
+    margin: 0 auto 10px;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+    min-width: 360px;
+}
+
+.headerTop {
+    display: none;
+}
+
+@media only screen and (min-width: 420px) {
+    .container {
+        padding-left: 55px !important;
+    }
+}
+
+@media only screen and (max-width: 809px) {
+    .pylCopyDesc {
+        display: none;
+    }
+    .headerBottom {
+        display: none;
+    }
+    .headerTop {
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    .bookCover {
+        margin-left: unset;
+    }
+
+    .contentButtonWrapper {
+        margin-right: unset;
+    }
+}
+
+@media only screen and (max-width: 829px) {
+    .container {
+        padding-bottom: 50px;
+        text-align: center;
+        display: block;
+    }
+
+    form {
+        margin-top: 15px;
+    }
+
+    .bookCover {
+        margin-left: unset;
+    }
+
+    .pylCopyDesc {
+        display: none;
+    }
+    .headerBottom {
+        display: none;
+    }
+    .headerTop {
+        margin-bottom: 15px;
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .bookCover {
+        margin-left: unset;
+    }
+
+    .contentButtonWrapper {
+        margin-right: unset;
+    }
+
+}
+
+@media only screen and (max-width: 470px) {
+
+    .contentButtonWrapper * {
+       width: 100%;
+       min-width: unset;
+    }
+
+}
