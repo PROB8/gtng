@@ -30,7 +30,7 @@
     <!-- Google verification -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112911264-4"></script>
-    <script>
+    <script type="text/javascript">
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
@@ -40,14 +40,27 @@
     <title>GTNG</title>
 </head>
 
-<body id='body'>
+<body id="body">
     <noscript>
         You need to enable JavaScript to run this app.
     </noscript>
-    <div id="root">
+    
+    <div id="root"></div>
 
-    </div>
-    <script src="https://www.paypal.com/sdk/js?client-id=AYpMmG4g8F9F6wCS8jfbf2nVYK_V8LFZJTZwkIc3YJcz0ioDdQnJcw3iS7b8VZfMva_x4mypxKpXHUC6&currency=USD" data-sdk-integration-source="button-factory"></script>
+    <script type="text/javascript">
+        const hostname = window.location.hostname;
+        const isDev = hostname.includes('staging') || hostname.includes('localhost');
+        const sandbox = 'https://www.paypal.com/sdk/js?client-id=AYpMmG4g8F9F6wCS8jfbf2nVYK_V8LFZJTZwkIc3YJcz0ioDdQnJcw3iS7b8VZfMva_x4mypxKpXHUC6&disable-funding=card,credit';
+        const live = 'https://www.paypal.com/sdk/js?client-id=AeS9UFKqxJPg5XPyS4MQBqNYHLwKRm4kbIXzGpBEk9ySoSYNVavWrz_AZMD0OOfLfY-eNhwscODk0jls';
+        const src = isDev ? sandbox : live;
+        const body = document.getElementById('body');
+        const script =  document.createElement('script');
+        script.setAttribute('src', src);
+        console.log(src)
+        script.setAttribute('data-sdk-integration-source', 'button-factory');
+        body.appendChild(script)
+        console.log('I AM WORKING',script)
+    </script>
 </body>
 
 </html>
