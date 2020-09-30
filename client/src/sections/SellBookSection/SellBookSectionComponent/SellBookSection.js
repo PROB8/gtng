@@ -1,8 +1,8 @@
 import React from 'react';
-import ButtonsComponent from './ButtonsComponent';
+import ButtonsComponent from '../ButtonsComponent/ButtonsComponent';
+
 import styles from './SellBookSection.module.css';
-import { pylLink, imgAlt, pylCopyHeader, pylCopyDesc } from './constants';
-import QuantitySelector from './QuantitySelector';
+import { pylLink, imgAlt, pylCopyHeader, pylCopyDesc } from '../constants';
 
 const SellBookSection = () => (
     <div className={ `${styles.container}` }>

@@ -1,7 +1,7 @@
 import React from 'react';
 import SectionOne from './section-one';
 import StickyNav from '../sticky-nav/sticky-nav';
-import SellBookSection from './SellBookSection/SellBookSection';
+import SellBookSection from '../sections/SellBookSection/SellBookSectionComponent/SellBookSection';
 import './head.css';
 
 const Head = _props => (
