@@ -51,7 +51,7 @@
         const hostname = window.location.hostname;
         const isDev = hostname.includes('staging') || hostname.includes('localhost');
         const sandbox = 'https://www.paypal.com/sdk/js?client-id=AYpMmG4g8F9F6wCS8jfbf2nVYK_V8LFZJTZwkIc3YJcz0ioDdQnJcw3iS7b8VZfMva_x4mypxKpXHUC6&disable-funding=card,credit';
-        const live = 'https://www.paypal.com/sdk/js?client-id=AeS9UFKqxJPg5XPyS4MQBqNYHLwKRm4kbIXzGpBEk9ySoSYNVavWrz_AZMD0OOfLfY-eNhwscODk0jls';
+        const live = 'https://www.paypal.com/sdk/js?client-id=AeS9UFKqxJPg5XPyS4MQBqNYHLwKRm4kbIXzGpBEk9ySoSYNVavWrz_AZMD0OOfLfY-eNhwscODk0jls&disable-funding=card,credit';
         const src = isDev ? sandbox : live;
         const body = document.getElementById('body');
         const script =  document.createElement('script');
