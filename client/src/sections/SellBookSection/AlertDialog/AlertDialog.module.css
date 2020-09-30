@@ -1,0 +1,29 @@
+.dialogTitle h2 {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.dialogContent {
+    text-align: center;
+    padding-bottom: 15px !important;
+}
+
+.dialogContent p {
+    margin-bottom: 0;
+}
+
+.circularProgress {
+    margin-bottom: 15px;
+}
+
+.dialogActions {
+    position: absolute;
+    right: 0;
+    margin-top: 8px;
+    margin-right: -5px;
+    flex: unset !important;
+    display: unset !important;
+    padding: unset !important;
+    align-items: unset !important;
+    justify-content: unset !important;
+}

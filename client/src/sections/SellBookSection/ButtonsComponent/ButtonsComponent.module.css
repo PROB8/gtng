@@ -1,0 +1,20 @@
+.wrapper {
+    text-align: center;
+}
+
+.amountsSection {
+    display: flex;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    min-width: 100px;
+    margin-left: 20px;
+}

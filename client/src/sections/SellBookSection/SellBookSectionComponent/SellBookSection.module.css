@@ -28,7 +28,6 @@
 
 .contentButtonWrapper {
     display: block;
-    margin-right: 20px;
 }
 
 .pylCopyDesc {
@@ -39,7 +38,6 @@
 
 form {
     text-align: center;
-    min-width: 360px;
 }
 
 .headerTop {
@@ -56,9 +54,11 @@ form {
     .pylCopyDesc {
         display: none;
     }
+
     .headerBottom {
         display: none;
     }
+
     .headerTop {
         margin-bottom: 15px;
         display: block;
@@ -73,7 +73,7 @@ form {
     }
 }
 
-@media only screen and (max-width: 829px) {
+@media only screen and (max-width: 879px) {
     .container {
         padding-bottom: 50px;
         text-align: center;
@@ -91,18 +91,18 @@ form {
     .pylCopyDesc {
         display: none;
     }
+
     .headerBottom {
         display: none;
     }
+
     .headerTop {
         margin-bottom: 15px;
         display: block;
     }
-
 }
 
 @media only screen and (max-width: 768px) {
-    
     .bookCover {
         margin-left: unset;
     }
@@ -110,14 +110,11 @@ form {
     .contentButtonWrapper {
         margin-right: unset;
     }
-
 }
 
 @media only screen and (max-width: 470px) {
-
     .contentButtonWrapper * {
        width: 100%;
        min-width: unset;
     }
-
 }

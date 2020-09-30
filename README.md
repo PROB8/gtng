@@ -2,3 +2,5 @@
 
 Actual webpage for GTNG
 git 
+
+[paypal](https://developer.paypal.com/docs/checkout/reference/customize-sdk/#disable-funding)

@@ -26,12 +26,12 @@ export const showHideArrow = () => {
 
 /* 
     
-        THE FUNCTION BELOW:
-            helps us to add css class to the 
-            appropriatel clicked nav link
+    THE FUNCTION BELOW:
+        helps us to add css class to the 
+        appropriatel clicked nav link
 
-        **IT HAS ALSO BEEN DEPRECATED 
-    */
+    **IT HAS ALSO BEEN DEPRECATED 
+*/
 export const activateTabOnClick = () => {
     document.addEventListener('click', function(e) {
         const className = e.path[0].className.split(' ');
@@ -61,7 +61,7 @@ export const showArrow = (arrowElement, windowScroll) => {
 };
 
 export const activateTabOnScroll = links => {
-    window.addEventListener('scroll', function(){
+    window.addEventListener('scroll', function() {
         const navBarBottom = document.getElementById('navbar').getBoundingClientRect().bottom;
         const docHeight = document.body.clientHeight;
 
@@ -76,10 +76,10 @@ export const activateTabOnScroll = links => {
             }
 
             if(elementsTop >= 20 && elementsTop < 200) {
-                correspondingLink.classList.add('active')
+                correspondingLink.classList.add('active');
             }
             
-            if(elementsTop  >= docHeight) {
+            if(elementsTop >= docHeight) {
                 correspondingLink.classList.remove('active');
             }
             

@@ -15,10 +15,11 @@
 }
 
 #navbar {
-    z-index: 22;
+    z-index: 101;
     background-color: #3f48cc;
     height: 58px;
 }
+
 #navbar a:hover {
     background-color: #ddd;
     color: black;
