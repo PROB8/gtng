@@ -1,25 +1,30 @@
 import React from 'react';
+import Slide from '@material-ui/core/Slide';
 import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
+import DialogTitle from '@material-ui/core/DialogTitle';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
-import DialogTitle from '@material-ui/core/DialogTitle';
-import Slide from '@material-ui/core/Slide';
 import CloseRoundedIcon from '@material-ui/icons/CloseRounded';
 import CircularProgress from '@material-ui/core/CircularProgress';
-import styles from './AlertDialog.module.css'
+import DialogContentText from '@material-ui/core/DialogContentText';
+
+import styles from './AlertDialog.module.css';
 
 const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction='down' ref={ref} {...props} />;
 });
 
-const AlertDialog = ({open, toggleOpen, dialogText, isSpinning, dialogTitle }) => {
-    
-    //* you cannot use the shorthand { toggleOpen } when using context
+const AlertDialog = props => {
+    const {
+        open,
+        toggleOpen,
+        dialogText,
+        isSpinning,
+        dialogTitle 
+    } = props;
     return (
         <div>
-            
             <Dialog
                 open={ open }
                 TransitionComponent={ Transition }
@@ -27,11 +32,10 @@ const AlertDialog = ({open, toggleOpen, dialogText, isSpinning, dialogTitle }) =
                 aria-labelledby='alert-dialog-slide-title'
                 aria-describedby='alert-dialog-slide-description'
             >
-                <DialogActions className={styles.dialogActions}>
+                <DialogActions className={ styles.dialogActions }>
                     <Button onClick={ toggleOpen }>
                         <CloseRoundedIcon/>
                     </Button>      
-                
                 </DialogActions>
                 <DialogTitle id='alert-dialog-slide-title' className={ styles.dialogTitle }>
                     { dialogTitle }
@@ -45,8 +49,8 @@ const AlertDialog = ({open, toggleOpen, dialogText, isSpinning, dialogTitle }) =
                     </DialogContentText>
                 </DialogContent>
             </Dialog>
-        </div>
+        </div> 
     );
-}
+};
 
 export default AlertDialog;

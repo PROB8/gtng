@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import styles from './ButtonsComponent.module.css';
-import QuantitySelector from '../QuantitySelector/QuantitySelector';
 import AlertDialog from '../AlertDialog/AlertDialog';
+import QuantitySelector from '../QuantitySelector/QuantitySelector';
+
+import styles from './ButtonsComponent.module.css';
 
 class ButtonsComponent extends Component {
     state = {
@@ -92,10 +93,7 @@ class ButtonsComponent extends Component {
 
 			onApprove: (_data, actions) => {
 				me.setState({ dialogOpen: true});
-			
 				return actions.order.capture().then( details => {
-					console.log('%cDETAILS: ', 'color:lime; font-size:50px')
-					console.log(details)
 					const itemOrItems = this.state.qty > 1 ? 'books' : 'book';
 					const dialogText = `Thank you for your purchase 
 						${details.payer.name.given_name}! 
@@ -103,10 +101,9 @@ class ButtonsComponent extends Component {
 						within two business days. 
 						Your orderId is ${details.id}.
 					`;
-					const dialogTitle = 'Order Processed!'
+					const dialogTitle = 'Order Processed!';
 					me.setState({ 
 						dialogText,
-						dialogOpen: true,
 						isSpinning: false,
 						dialogTitle,
 				    });
@@ -115,9 +112,20 @@ class ButtonsComponent extends Component {
 			},
 
 			onError: err => {
-				this.setUpPayment();
-				this.props.showModal(false);
-				console.log(err);
+				me.setUpPayment();
+				const dialogText = `Hey there! 
+					While we are thankful for your effort to 
+					support us, we are experiencing an issue 
+					processing your payment. Please try again.
+				`;
+				const dialogTitle = 'Unable to process!'
+				me.setState({ 
+					dialogText,
+					dialogOpen: true,
+					isSpinning: false,
+					dialogTitle,
+				});
+				console.error(err);
 			},
 		}).render('#paypal-button-container');
     };
