@@ -14,7 +14,7 @@ class ButtonsComponent extends Component {
     };
 
     componentDidMount = () => {
-        this.setUpPayment();
+        window.onload = this.setUpPayment();
     };
 
     determineShipping = () => {

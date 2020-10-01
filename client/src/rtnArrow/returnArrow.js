@@ -14,7 +14,8 @@ export default class ReturnArrow extends Component {
     render() {
 
         return (
-            <a className='up-arrow-link'  
+            <a className='up-arrow-link'
+                href=''
                 onClick={() => {
                     const yOffset = window.pageYOffset;
                     tools.scrollTop(yOffset);
