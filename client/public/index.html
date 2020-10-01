@@ -41,12 +41,8 @@
 </head>
 
 <body id="body">
-    <noscript>
-        You need to enable JavaScript to run this app.
-    </noscript>
-    
+    <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-
     <script type="text/javascript">
         const hostname = window.location.hostname;
         const isDev = hostname.includes('staging') || hostname.includes('localhost');
@@ -54,10 +50,11 @@
         const live = 'https://www.paypal.com/sdk/js?client-id=AeS9UFKqxJPg5XPyS4MQBqNYHLwKRm4kbIXzGpBEk9ySoSYNVavWrz_AZMD0OOfLfY-eNhwscODk0jls&disable-funding=card,credit';
         const src = isDev ? sandbox : live;
         const body = document.getElementById('body');
-        const script =  document.createElement('script');
+        const script = document.createElement('script');
+        const event = new CustomEvent('loadedPaypal');
         script.setAttribute('src', src);
         script.setAttribute('data-sdk-integration-source', 'button-factory');
-        body.appendChild(script)
+        body.appendChild(script);
     </script>
 </body>
 

@@ -57,7 +57,7 @@ export default class Footer extends Component {
                             <p>Build mobile and web apps, better than today's!</p>
                         </div>
                         <div className="footer-container b">
-                            <a
+                            <a  href="#"
                                 onClick={() => {
                                     this.setState({ iframe: iframe });
                                     this.modalDisplay();
