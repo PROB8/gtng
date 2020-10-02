@@ -23,6 +23,7 @@
 }
 
 div>.up-arrow-link {
+    color: #363333;
     position:relative;
     top:1px;
     text-decoration:none;
