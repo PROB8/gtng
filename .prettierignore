@@ -1,0 +1,8 @@
+.next/
+README.md
+next.config.js
+.prettierrc
+*.json
+*.d.ts
+backend/cdk/cdk.out
+*.yml

@@ -1,0 +1,76 @@
+.firstUlLink,
+.myName,
+.myTitle,
+.icon {
+  color: white;
+}
+
+.wrapper {
+  position: absolute;
+  margin: 0 auto;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.myName {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.6em;
+  line-height: 1.2em;
+  margin-bottom: 20px;
+}
+
+.myTitle {
+  font-size: 1.3em;
+  margin: 20px 0;
+}
+
+.firstUlLink {
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+.firstUl {
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (min-width: 720px) {
+  .firstUl li {
+    display: inline;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 20px 0 20px;
+  }
+
+  .main-nav {
+    margin: auto;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .firstUl,
+  .links {
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .firstUl li,
+  .links a {
+    margin: 10px;
+  }
+}

@@ -1,0 +1,41 @@
+.aboutMeWrapper {
+  margin-bottom: 30px;
+  padding-top: 25px;
+}
+
+.headshot {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  background-image: url('../pictures/NaeemGitonga.jpg');
+  background-position: center top 443px;
+  border-radius: 50%;
+  background-size: 171% auto;
+  margin: auto;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.aboutMe {
+  line-height: 35px;
+  font-size: 20px;
+  font-size: 20px;
+  margin: 0 auto;
+  width: 75%;
+  margin-top: 52px;
+}
+
+.about {
+  color: black;
+  margin: auto;
+  margin-top: 20px;
+  line-height: 1.4;
+  overflow: auto;
+  word-wrap: break-word;
+  max-width: 600px;
+  @media only screen and (max-width: 720px) {
+  }
+}
