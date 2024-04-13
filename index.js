@@ -16,6 +16,6 @@ else {
       'localhost:8080/api': 'http://localhost:3001'
     }
   }));
-  console.log('work')
+  console.log('working')
   app.listen(process.env.PORT || 8080)
 }
